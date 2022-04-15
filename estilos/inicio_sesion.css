@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -62,6 +62,7 @@ body{
     width: 10%;
     height: 10%;
     text-align: center;
+    color: wheat;
  
 }
 
