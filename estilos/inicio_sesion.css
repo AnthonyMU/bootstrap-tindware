@@ -1,0 +1,67 @@
+body{
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    
+}
+.form-control{
+    background: rgba(0, 0, 0,0.3);
+    border-style: none;
+    outline: none;
+    text-align: center;
+    width: 75%;
+    display:block;
+    margin: auto;
+    color: wheat;
+   
+}
+
+.form-control::placeholder{
+    color:whitesmoke
+
+}
+.form-control:focus{
+    background: none;
+    box-shadow: none;
+    outline: none;
+    background: rgba(0, 0, 0,0.3);
+    color: aliceblue;
+}
+
+.ingresar{
+    background: #222A3F;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: whitesmoke;
+    transition: 0.5s ease-in;
+    text-align: center;
+    width: 50%;
+    display:block;
+    margin: auto;
+   
+}
+.ingresar:hover{
+    color: whitesmoke;
+}
+
+#centrador{
+    padding: 1%;
+    text-align: center;
+ 
+}
+
+#img{
+    width: 10%;
+    height: 10%;
+    text-align: center;
+ 
+}
+

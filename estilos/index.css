@@ -1,0 +1,17 @@
+#button{
+    background-color:#120058;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.informacion{
+    background: rgba(0, 0, 0,0.3);
+}
+.inicio{
+    background: rgba(0, 0, 0,0.3);
+}
+.desplegable{
+    background: rgba(0, 0, 0,0.3);
+}
