@@ -5,7 +5,6 @@
     margin-right: auto;
     width: 25%;
 }
-
 .informacion{
     background: rgba(0, 0, 0,0.3);
 }
@@ -15,4 +14,6 @@
 .desplegable{
     background: rgba(0, 0, 0,0.3);
 }
-
+#intructors{
+    background: rgba(0, 0, 0,0.3);
+}
