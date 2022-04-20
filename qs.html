@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="estilos/inicio_sesion.css">
-    <link rel="stylesheet" type="text/css" href="estilos/inicio_sesion.css">
+    <link rel="stylesheet" type="text/css" href="estilos/qs.css">
 </head>
 <body>
 
     <!--menu-->
-    <nav class="nav.navbar navbar-expand-lg bg-black navbar-dark py-3">
+    <nav class="nav.navbar navbar-expand-lg bg-black navbar-dark py-3 ">
         <div class="container">
             <a href="index.html" class="navbar-brand fs-1">TindWare</a>
             <button 
@@ -43,58 +45,39 @@
         </div>
    </nav>
 
-    <!--quienes somos-->
-    <section id="learn" class="text-white">
-        <p class="h1 text-center py-5">¿Quienés somos?</p>
-        <div class="container-md">
-            <div class="row">
-                 <!-- una idea-->
-              <div class="col-md">
-                <div>
-                    <img src="bombilla.png" width="250" class="img-fluid" alt="...">
-                </div>
-              </div>
-              <div class="col-md py-5">
-                <p class="lead ">Una simple idea, la cual llevó su tiempo en ser desarrollada por fin está aquí.</p>
-              </div>
-            </div>
-            <div class="row">
-                <!--un equipo-->
-                <div class="col-md">
-                    <p class="lead ">Todo un equipo detrás, vayas donde vayas estaremos a tu disposición para ofrecerte la mejor experienncia.</p>
-                  </div>
-                <div class="col">
-                    <div>
-                        <img src="equipo.png" width="250" class="img-fluid" alt="...">
-                    </div>
-                </div>
-            </div>
-            <div class="row p-3">
-                <!-- una idea-->
-             <div class="col-md">
-               <div>
-                   <img src="reloj.png" width="200" class="img-fluid" alt="...">
-               </div>
-             </div>
-             <div class="col-md py-5">
-               <p class="lead ">Garantizamos siempre un servicio 24 horas, los 365 dias del año. ¿A qué estas esperando?</p>
-             </div>
-           </div>
+    <!--slider -->
+
+
+    <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner container-fluid">
+        <div class="carousel-item active">
+          <img src="img/10.jpg" class="d-block img img-responsive" alt="...">
+          <div class="text text-white position-absolute" >ejemplo</div>
         </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" class="d-block img img-responsive" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/8.jpg" class="d-block img img-responsive" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       
-    </section>
-
-    <footer class="p-5 bg-black text-white text-center position-relative">
-
-        <div class="container">
-            <p class="lead">Copyright &copy; 2022 Tindware</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up h1"></i>
-            </a>
-        </div>
-    </footer>
+  </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
