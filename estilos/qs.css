@@ -1,23 +1,21 @@
-.img{
-    height: 500px;
-    width: 75%;
+.imgg{
+    height:450px;
+    width: 70%;
     display:block;
-margin:auto;
+    margin:auto;
 }
-
-
 .carousel-item{
     position: relative;
     margin-top: 5%;
+    margin-bottom: 5%;
  
 }
-
+.carousel{
+    margin-bottom: 2em;
+}
 
 .text {
     position: absolute;    /* posición absolute con respecto al padre */
     bottom: 0;
-    left: 0;             /* posicionada en la esquina inferior derecha */
-    right: 1rem;
- 
-    
-  }
+    left: 0;             /* posicionada en la esquina inferior derecha */ 
+}

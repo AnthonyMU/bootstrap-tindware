@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="estilos/inicio_sesion.css">
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" type="text/css" href="estilos/index.css">
+    <link rel="stylesheet" type="text/css" href="estilos/qs.css">
+    <link rel="stylesheet" type="text/css" href="estilos/footer.css">
 </head>
 <body>
 
@@ -50,9 +52,9 @@
     <section class="text-light p-5 p-lg-3 pt-lg-5 text-center text-sm-start incio">
         <div class="row">
             <div class="col">
-             <div>
-                <div class="text-center">
-                    <div>
+                 <div>
+                    <div class="text-center">
+                        <div>
                         <h1>Bienvenido TindWare</h1>
                             <p class="lead my-5 fs-4">Bienvenido a TindWare, el servicio técnico 24/7, los 365 dias del año.</p>
                         <button id="button" 
@@ -60,17 +62,11 @@
                         data-bs-toggle="modal" 
                         data-bs-target="#enroll"
                         >Iniciar sesion
-                    </button>
+                        </button>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
-
-            </div>
-           
-
-         
-
         </div>
            
     </section>
@@ -127,7 +123,7 @@
     </div>
 </section>
 
-<!-- Akgo de informacion sobre la empresa-->
+<!-- Algo de informacion sobre la empresa-->
 
 <section id="learn" class="p-5">
     <div class="container">
@@ -261,8 +257,8 @@
 <!--Información de contacto-->
 <section class="p-5">
     <div class="container">
-        <div class="row-g-4">
-            <div class="col-md">
+        <div class="row">
+            <div class="col-md-12">
                 <h2 class="text-center mb-4 text-white ">Información de contacto</h2>
                     <ul class="listy-group list-group-flush lead">
                         <li class="list-group-item informacion text-white">
@@ -286,15 +282,47 @@
 
 <!-- footer-->
 
-<footer class="p-5 bg-black text-white text-center position-relative">
-
-    <div class="container">
-        <p class="lead">Copyright &copy; 2022 Tindware</p>
-        <a href="#" class="position-absolute bottom-0 end-0 p-5">
-            <i class="bi bi-arrow-up h1"></i>
-        </a>
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Links de utilidad</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Quines somos</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Iniciar sesion</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Registrarse</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p> A108 Adam Street <br> New York, NY 535022<br> United States <br><br> <strong>Phone:</strong> +1 5589 55488 55<br> <strong>Email:</strong> info@example.com<br> </p>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-info">
+                    <h3>Sobre TindWare</h3>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                    <div class="social-links mt-3"> 
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> 
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> 
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> 
+                    </div>
+                </div>
+                <div class="col-lg-12 text-white text-center position-relative">
+                    <p class="lead">Copyright &copy; 2022 Tindware</p>  
+                </div>
+         
+                </div>
+               
+            </div>
+        </div>
     </div>
+   
 </footer>
+
 
 
 <!-- Aqui tenemos el modal de inicio de sesión-->
@@ -308,6 +336,7 @@ aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content desplegable">
         <div class="modal-body">
+
            <!--Aqui tenemos el formulario de inicio de sesion -->
            <form action="">
             <div class="form-group text-center">
@@ -331,8 +360,6 @@ aria-hidden="true">
       </div>
     </div>
   </div>
-
-
-
+  
 </body>
 </html>
