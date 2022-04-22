@@ -15,12 +15,14 @@
 .desplegable{
     background: rgba(0, 1, 39, 0.5);
 }
-#intructors{
-    background: rgba(0, 0, 0,0.3);
-}
 
 
 .card{
     background: rgba(0, 1, 39, 0.5);
+}
+
+
+.foto-equipo{
+    width: 50%;
     
 }
