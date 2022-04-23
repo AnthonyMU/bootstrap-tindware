@@ -35,8 +35,6 @@ body{
     background: rgba(0, 0, 0,0.7);
     color: wheat;
 }
-
-
 .ingresar{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
     background: rgba(0, 0, 0,0.6);
@@ -58,7 +56,6 @@ body{
 #centrador{
     padding: 1%;
     text-align: center;
- 
 }
 .img{
     width: 10%;
@@ -67,7 +64,6 @@ body{
     color: wheat;
  
 }
-
 .select{
     background: rgba(0, 0, 0,1);
 }
