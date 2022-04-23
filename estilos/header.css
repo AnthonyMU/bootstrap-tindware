@@ -1,20 +1,22 @@
+/*Para darle transparencia el menu*/
 .menu{
     background: rgba(0, 1, 39, 0.5);
-  
 }
+/*Para hacer el header estatico y bajar el contenido de la pagina*/
 body{
     padding-top: 100px;
 }
-.nav-link:hover{
-    background: rgba(0, 1, 39, 0.5);
-    color: blue;
-}
-.nav-link{
+/* para hacer la linea deslizable de los links */
+.nav-link {
     font-weight: bold;
+    text-decoration: none;
+    background-image: linear-gradient(blue, blue);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
 }
-li:hover {
-    border-bottom: 1px solid blue;
-    border-radius: 5px;
-    color: black;
-  
+a:hover, a:focus {
+    background-size: 100% 2px;
 }
+

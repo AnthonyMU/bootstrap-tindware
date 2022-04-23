@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="estilos/faq.css">
     <link rel="stylesheet" type="text/css" href="estilos/qs.css">
     <link rel="stylesheet" type="text/css" href="estilos/footer.css">
+    <link rel="stylesheet" type="text/css" href="estilos/header.css">
   </head>
 <body>
 
     <!--NAVBAR-->
-    <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3">
+    <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
       <div class="container">
           <a href="index.html" class="navbar-brand fs-1">TindWare</a>
           <button 
@@ -26,28 +27,30 @@
           data-bs-target="#navmenu">
               <span class="navbar-toggler-icon"></span>
           </button>
+      <!-- Aqui la barra de navegacion-->
       <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a href="qs.html" class="nav-link">Quienes somos</a>
+                  <a href="qs.html" class="nav-link text-white">Quienes somos</a>
               </li>
               <li class="nav-item">
-                  <a href="FAQ.html" class="nav-link">FAQ</a>
+                  <a href="FAQ.html" class="nav-link text-white">FAQ</a>
               </li>
               <li class="nav-item">
-                  <a href="iniciosesion.html" class="nav-link">Iniciar sesión</a>
+                  <a href="iniciosesion.html" class="nav-link text-white">Iniciar sesión</a>
               </li>
               <li class="nav-item">
-                  <a href="#learn" class="nav-link">Registro</a>
+                  <a href="registro.html" class="nav-link  text-white">Registro</a>
               </li>
           </ul>
       </div>
       </div>
- </nav>
+ </nav> 
+
 <!--FAQ-->
 <section>  
 <div class="accordion accordion-flush py-4 p-5" id="accordionFlushExample">
-    <h2 class="text-center text-white py-4 faq">Preguntas más frecuentes</h2>
+    <h2 class="text-center text-white py-4 ">Preguntas más frecuentes</h2>
     <div class="accordion-item faq text-white">
       <h2 class="accordion-header faq" id="flush-headingOne">
         <button class="accordion-button collapsed faq alinear" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne faq">

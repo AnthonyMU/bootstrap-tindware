@@ -1,22 +1,22 @@
 .faq{
     background: rgba(0, 0, 0,0.3);
     color: white;
-    text-align: center;
-    font-weight: 700;
+    text-align: center;  
 }
-
 .faq:focus{
     background: none;
     box-shadow: none;
     outline: none;
-    color: #7d2181;
+    color: yellow;
 }
-
+.faq:hover{
+    color: yellow;
+}
 .alinear{
     text-align: center;
     display: block;
 }
-
 .rev{
-    color: #7d2181;
+    color: yellow;
 }
+
