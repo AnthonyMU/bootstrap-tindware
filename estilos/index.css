@@ -7,19 +7,19 @@
 }
 .button:hover{
     background: rgba(0, 1, 39, 1);
-    box-shadow: 0 0 25px rgba(49, 0, 165, 0.5);
+    box-shadow: 0 0 25px rgba(49, 0, 165, 0.9);
 }
 .informacion{
-    background: rgba(0, 1, 39, 0.5);
+    background: rgba(0, 0, 0, 0.9);
 }
 .inicio{
-    background: rgba(0, 1, 39, 0.5);
+    background: rgba(0, 0, 0, 0.9);
 }
 .desplegable{
-    background: rgba(0, 1, 39, 0.3);
+    background: rgba(0, 0, 0, 0.9);
 }
 .card{
-    background: rgba(0, 1, 39, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
 }
 .card p{
@@ -28,4 +28,9 @@
 }
 .foto-equipo{
     width: 50%;
+}
+#learn{
+    background: rgba(0, 0, 0, 0.9);
+    margin-left: 5%;
+    margin-right: 5%;
 }
