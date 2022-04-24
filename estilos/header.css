@@ -1,6 +1,6 @@
 /*Para darle transparencia el menu*/
 .menu{
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 1, 39, 0.5);
 }
 /*Para hacer el header estatico y bajar el contenido de la pagina*/
 body{
