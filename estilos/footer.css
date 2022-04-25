@@ -1,15 +1,15 @@
 #footer {
     color: #fff;
     font-size: 14px;
-    
 }
+
 
 #footer .footer-top {
     background: #3b3b3b;
     border-top: 1px solid #474747;
     border-bottom: 1px solid #474747;
     padding: 60px 0 30px 0;
-    background: rgba(0, 1, 39, 0.6);
+    background: rgba(0, 1, 39, 0.9);
 }
 
 #footer .footer-top .footer-info {
