@@ -15,16 +15,23 @@
 .inicio{
     background: rgba(0, 1, 39, 0.9);
 }
+h1,h3{
+   font-weight: bold;
+}
 .desplegable{
     background: rgba(0, 1, 39, 0.3);
+}
+.bloque{
+    background: rgba(0, 1, 39, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 .card{
     background: rgba(0, 1, 39, 0.9);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 .card p{
-    font-weight: bold;
     line-height: 30px;
+    font-size: 18px;
 }
 .foto-equipo{
     width: 50%;
@@ -32,3 +39,16 @@
 #learn{
     background: rgba(0, 1, 39, 0.9);
 }
+.tarjeta{
+    background: rgba(0, 1, 39, 0.9);
+}
+.justificador{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 35px;
+}
+.contacto{
+    font-size: 18px;
+    font-weight: normal;
+}
+

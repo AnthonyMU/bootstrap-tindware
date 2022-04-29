@@ -8,9 +8,9 @@ body{
 }
 /* para hacer la linea deslizable de los links */
 .nav-link {
-    font-weight: bold;
+  
     text-decoration: none;
-    background-image: linear-gradient(blue, blue);
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -19,4 +19,3 @@ body{
 a:hover, a:focus {
     background-size: 100% 2px;
 }
-
