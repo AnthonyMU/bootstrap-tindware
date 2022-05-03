@@ -27,7 +27,7 @@ h1,h3{
 }
 .card{
     background: rgba(0, 1, 39, 0.9);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+   
 }
 .card p{
     line-height: 30px;
@@ -50,5 +50,15 @@ h1,h3{
 .contacto{
     font-size: 18px;
     font-weight: normal;
+}
+.card{
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+.card:hover{
+   transform: scale(1.1,1.1);
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
