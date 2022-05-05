@@ -26,5 +26,6 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key -p 4522 ubuntu@tindware.duckdns.org '
           
             cd /var/www/bootstrap-tindware
+            git config --global --add safe.directory /var/www/bootstrap-tindware
             git pull'
           '
