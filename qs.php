@@ -1,54 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="estilos/inicio_sesion.css">
-    <link rel="stylesheet" type="text/css" href="estilos/qs.css">
-    <link rel="stylesheet" type="text/css" href="estilos/footer.css">
-    <link rel="stylesheet" type="text/css" href="estilos/header.css">
-
 </head>
 <body>
-
-    <!--menu-->
-    <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
-        <div class="container">
-            <button 
-            class="navbar-toggler" 
-            type="buttom" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <!-- Aqui la barra de navegacion-->
-        <div class="collapse navbar-collapse" id="navmenu">
-            <a href="index.html" class="navbar-brand fs-1">TindWare</a>
-            <ul class="navbar-nav ms-auto lead">
-                <li class="nav-item">
-                    <a href="qs.html" class="nav-link text-white">Quienes somos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="FAQ.html" class="nav-link text-white">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="iniciosesion.html" class="nav-link text-white">Iniciar sesión</a>
-                </li>
-                <li class="nav-item">
-                    <a href="registro.html" class="nav-link  text-white">Registro</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-   </nav> 
-
+<?php
+    # Cargar constantes
+    include 'inc/constantes.php';
+    # Cargamos cookies
+    include 'inc/obtenerCookies.php';
+    # Incluir header
+    include 'inc/header.php';
+?>
 
     <!--slider -->
 
