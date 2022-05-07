@@ -19,6 +19,11 @@
 
     
 <body>
+    <?php
+    @include 'inc/constantes.php';
+    @include 'inc/obtenerDatosUser.php';
+    
+    ?>
 
     <!--menu-->
    <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
