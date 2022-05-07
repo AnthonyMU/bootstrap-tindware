@@ -22,6 +22,18 @@
     <link rel="stylesheet" type="text/css" href="estilos/header.css">
 </head>
 <body>
+    <?php
+    if ($datosUser['tipo'] == 'invitado') {
+        echo "Soy invitado";
+        echo "<pre>"; echo HIDE; echo "</pre>";
+        echo "<pre>"; echo HIDECLOSE; echo "</pre>";
+    }
+    if ($datosUser['tipo'] != 'invitado') {
+        echo "Soy usuario";
+        echo "<pre>"; echo HIDE; echo "</pre>";
+        echo "<pre>"; echo HIDECLOSE; echo "</pre>";
+    }
+    ?>
  <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
         <div class="container">
             <button 
