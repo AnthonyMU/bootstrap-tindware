@@ -7,7 +7,6 @@
     <?php
     include 'inc/constantes.php';
     @include "inc/obtenerDatosUser.php";
-    include 'inc/header.php';
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
@@ -40,8 +39,8 @@
     }
     else {
         $loginCorrecto = false;
-        echo "<a href='iniciosesion.php'>Datos incorrectos, pincha aquí para rellenar los datos de inicio de sesión correctamente</a>"; # DEBUG
     }
+    include 'inc/header.php';
     ?>
 
     <?php
