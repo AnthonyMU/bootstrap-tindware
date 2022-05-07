@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>Document</title>
+    <title>Quienes Somos - Tindware</title>
 </head>
 <body>
 <?php
