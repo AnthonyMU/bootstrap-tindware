@@ -22,66 +22,60 @@
     <link rel="stylesheet" type="text/css" href="estilos/header.css">
 </head>
 <body>
-    <?php
-        echo HIDE;
-        echo "<p>Deberia estar hidden</p>";
-        echo HIDECLOSE;
-        echo "<p>id user $id_user; type user $type_user</p>"
-    ?>
  <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
         <div class="container">
             <button 
-            class="navbar-toggler" 
-            type="buttom" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
+                class="navbar-toggler" 
+                type="buttom" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
             </button>
-        <!-- Aqui la barra de navegacion-->
-        <div class="collapse navbar-collapse" id="navmenu">
-            <a href="index.php" class="navbar-brand fs-1">TindWare</a>
-            <ul class="navbar-nav ms-auto lead">
-                <li class="nav-item">
-                    <a href="qs.php" class="nav-link text-white">Quienes somos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="FAQ.php" class="nav-link text-white">FAQ</a>
-                </li>
-                <?php
-                # Si no es guest quitamos el boton de iniciar sesión o registro
-                if ($id_user != 0) {
-                    echo HIDE;
-                }
-                ?>
-                <li class="nav-item">
-                    <a href="iniciosesion.php" class="nav-link text-white">Iniciar sesión</a>
-                </li>
-                <li class="nav-item">
-                    <a href="registro.php" class="nav-link  text-white">Registro</a>
-                </li>
-                <?php
-                if ($id_user != 0) {
-                    echo HIDECLOSE;
-                }
-                
-                # Si es guest no mostramos el boton de cerrar sesión
-                if ($id_user == 0) {
-                    echo HIDE;
-                }
-                ?>
-                <li class="nav-item">
-                    <a href="perfil.php" class="nav-link text-white">Perfil de <?php echo @$datosUser['username'] ?>.</a>
-                </li>
-                <li class="nav-item">
-                    <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
-                </li>
-                <?php
-                if ($id_user == 0) {
-                    echo HIDECLOSE;
-                }
-                ?>
-            </ul>
-        </div>
+            <!-- Aqui la barra de navegacion-->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <a href="index.php" class="navbar-brand fs-1">TindWare</a>
+                <ul class="navbar-nav ms-auto lead">
+                    <li class="nav-item">
+                        <a href="qs.php" class="nav-link text-white">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="FAQ.php" class="nav-link text-white">FAQ</a>
+                    </li>
+                    <?php
+                    # Si no es guest quitamos el boton de iniciar sesión o registro
+                    if ($type_user != "invitado") {
+                        echo HIDE;
+                    }
+                    ?>
+                    <li class="nav-item">
+                        <a href="iniciosesion.php" class="nav-link text-white">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.php" class="nav-link  text-white">Registro</a>
+                    </li>
+                    <?php
+                    if ($type_user != "invitado") {
+                        echo HIDECLOSE;
+                    }
+                    
+                    # Si es guest no mostramos el boton de cerrar sesión
+                    if ($type_user == "invitado") {
+                        echo HIDE;
+                    }
+                    ?>
+                    <li class="nav-item">
+                        <a href="perfil.php" class="nav-link text-white">Perfil de <?php echo @$datosUser['username'] ?>.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
+                    </li>
+                    <?php
+                    if ($type_user == "invitado") {
+                        echo HIDECLOSE;
+                    }
+                    ?>
+                </ul>
+            </div>
         </div>
    </nav>
 </body>
