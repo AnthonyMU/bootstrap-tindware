@@ -65,7 +65,7 @@
                 }
                 ?>
                 <li class="nav-item">
-                    <a href="perfil.php" class"nav-link text-white">Perfil de <?php echo @$datosUser['username'] ?>.</a>
+                    <a href="perfil.php" class="nav-link text-white">Perfil de <?php echo @$datosUser['username'] ?>.</a>
                 </li>
                 <li class="nav-item">
                     <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
