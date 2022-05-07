@@ -21,7 +21,7 @@
         <div class="col-md-6 col-sm-8 col-xl-6 col-lg-5 formulario">
             <form action="do_login.php" method="POST">
                 <div class="form-group text-center">
-                    <h4 class="text-white">Iniciar sesion</h4>
+                    <h4 class="text-white">Inicio de sesión</h4>
                     <div id="centrador">
                         <img src="img/login2.png" class="rounded-circle img">  
                     </div>

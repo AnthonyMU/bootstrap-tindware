@@ -244,22 +244,22 @@ aria-hidden="true">
         <div class="modal-body">
 
            <!--Aqui tenemos el formulario de inicio de sesion -->
-           <form action="">
-            <div class="form-group text-center">
-                 <h4 class="text-white">Iniciar sesion</h4>
-                 <div id="centrador">
-                    <img src="img/login.png" class="rounded-circle img">  
-                    </div>
-            </div>
-            <div class="form-group mx-sm-4  pb-3">
-                <input type="text" class="form-control" placeholder="usuario">
-            </div>
-            <div class="form-group mx-sm-4 pb-3">
-                <input type="password" class="form-control" placeholder="contraseña">
-            </div>
-            <div class="form-group mx-sm-4 pb-4">
-                <input type="submit" class="btn btn-block ingresar" value="ingresar">
-            </div>
+           <form action="do_login.php" method="POST">
+                <div class="form-group text-center">
+                    <h4 class="text-white">Incio de sesión</h4>
+                    <div id="centrador">
+                        <img src="img/login.png" class="rounded-circle img">  
+                        </div>
+                </div>
+                <div class="form-group mx-sm-4  pb-3">
+                    <input name="login" type="text" class="form-control" placeholder="Usuario o email">
+                </div>
+                <div class="form-group mx-sm-4 pb-3">
+                    <input name="passwd" type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="form-group mx-sm-4 pb-4">
+                    <input type="submit" class="btn btn-block ingresar" value="ingresar">
+                </div>
             </form>
         </div>
      
