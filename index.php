@@ -20,14 +20,41 @@
                  <div>
                     <div class="text-center lead">
                         <div>
-                        <h1>Bienvenido a TindWare</h1>
+                            <h1>Bienvenido a TindWare</h1>
                             <p class="lead my-5 fs-4">Bienvenido a TindWare, el servicio técnico 24/7, los 365 dias del año.</p>
-                        <button id="button" 
-                        class="btn btn-dark button" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#enroll"
-                        >Iniciar sesion
-                        </button>
+                            <?php
+                            if ($id_user != 0) {
+                                echo HIDE;
+                            }
+                            ?>
+                            <div class="row justify-content-center">
+                                <button id="button" class="btn btn-dark button" data-bs-toggle="modal" data-bs-target="#enroll">
+                                    Iniciar sesión
+                                </button>
+                                <button id="button" class="btn btn-dark button" onclick="location.href='registro.php';">
+                                    ¡Regístrate ya!
+                                </button>
+                            </div>
+                            <?php
+                            if ($id_user != 0) {
+                                echo HIDECLOSE;
+                            }
+                            if ($id_user == 0) {
+                                echo HIDE;
+                            }
+                            ?>
+                            <div class="row justify-content-center">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';">
+                                    Crear oferta (cambiar)
+                                </button>
+                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';">
+                                    Buscar oferta (cambiar)
+                                </button>
+                            </div>
+                            <?php
+                            if ($id_user == 0) {
+                                echo HIDECLOSE;
+                            }?>
                         </div>
                     </div>
                 </div>
@@ -258,7 +285,7 @@ aria-hidden="true">
                     <input name="passwd" type="password" class="form-control" placeholder="Contraseña">
                 </div>
                 <div class="form-group mx-sm-4 pb-4">
-                    <input type="submit" class="btn btn-block ingresar" value="ingresar">
+                    <input type="submit" class="btn btn-block ingresar" value="Iniciar sesión">
                 </div>
             </form>
         </div>
