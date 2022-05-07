@@ -86,5 +86,12 @@
         mysqli_close($con);
         ?>
     </div>
+
+
+<?php
+include 'inc/footer.php';
+?>
+
+
 </body>
 </html>

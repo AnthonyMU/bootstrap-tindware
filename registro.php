@@ -53,46 +53,10 @@
 
    <!--Footer-->
 
-   <footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 footer-links">
-                    <h4>Links de utilidad</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Quines somos</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Iniciar sesion</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Registrarse</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de privacidad</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
-                    <p> A108 Adam Street <br> New York, NY 535022<br> United States <br><br> <strong>Phone:</strong> +1 5589 55488 55<br> <strong>Email:</strong> info@example.com<br> </p>
-                </div>
-                <div class="col-lg-4 col-md-6 footer-info">
-                    <h3>Sobre TindWare</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                    <div class="social-links mt-3"> 
-                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> 
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> 
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> 
-                    </div>
-                </div>
-                <div class="col-lg-12 text-white text-center position-relative">
-                    <p class="lead">Copyright &copy; 2022 Tindware</p>  
-                </div>
-         
-                </div>
-               
-            </div>
-        </div>
-    </div>
-   
-</footer>
+<?php
+include 'inc/footer.php';
+?>
+
 
 
 
