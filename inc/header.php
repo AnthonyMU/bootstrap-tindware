@@ -43,7 +43,7 @@
                     </li>
                     <?php
                     # Si no es guest quitamos el boton de iniciar sesión o registro
-                    if ($type_user != "invitado") {
+                    if ($datosUser['tipo'] != "invitado") {
                         echo HIDE;
                     }
                     ?>
@@ -54,12 +54,12 @@
                         <a href="registro.php" class="nav-link  text-white">Registro</a>
                     </li>
                     <?php
-                    if ($type_user != "invitado") {
+                    if ($datosUser['tipo'] != "invitado") {
                         echo HIDECLOSE;
                     }
                     
                     # Si es guest no mostramos el boton de cerrar sesión
-                    if ($type_user == "invitado") {
+                    if ($datosUser['tipo'] == "invitado") {
                         echo HIDE;
                     }
                     ?>
@@ -70,7 +70,7 @@
                         <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
                     </li>
                     <?php
-                    if ($type_user == "invitado") {
+                    if ($datosUser['tipo'] == "invitado") {
                         echo HIDECLOSE;
                     }
                     ?>
