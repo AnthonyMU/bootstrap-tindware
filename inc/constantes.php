@@ -2,8 +2,6 @@
 # Constantes para los span con class=hidden
 define ('HIDE', "<span class='hidden'>");
 define ('HIDECLOSE', "</span>");
-define ('HIDE2', "<span class='hidden'>");
-define ('HIDECLOSE2', "</span>");
 if (str_contains(PHP_OS, 'WINNT')) {
     # Conexion a mysql de XAMPP
     define ('MYSQL_PASSWD', null);
