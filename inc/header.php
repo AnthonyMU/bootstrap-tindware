@@ -60,7 +60,7 @@
                     
                     # Si es guest no mostramos el boton de cerrar sesión
                     if ($datosUser['tipo'] == "invitado") {#
-                        echo "<span class=hidden>";
+                        echo HIDE;
                     }
                     ?>
                     <li class="nav-item">
@@ -71,7 +71,7 @@
                     </li>
                     <?php
                     if ($datosUser['tipo'] == "invitado") {
-                        echo "</span>";
+                        echo HIDECLOSE;
                     }
                     ?>
                 </ul>
