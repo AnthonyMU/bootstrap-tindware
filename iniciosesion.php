@@ -6,9 +6,6 @@
 <?php
     # Cargar constantes
     include 'inc/constantes.php';
-    echo HIDE;
-    echo "<p>Deberia estar hidden</p>";
-    echo HIDECLOSE;
     # Cargamos cookies
     include 'inc/obtenerCookies.php';
     # Incluir header

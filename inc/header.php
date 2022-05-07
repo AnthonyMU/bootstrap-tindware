@@ -22,6 +22,12 @@
     <link rel="stylesheet" type="text/css" href="estilos/header.css">
 </head>
 <body>
+    <?php
+        echo HIDE;
+        echo "<p>Deberia estar hidden</p>";
+        echo HIDECLOSE;
+        echo "<p>id user $id_user; type user $type_user</p>"
+    ?>
  <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
         <div class="container">
             <button 
