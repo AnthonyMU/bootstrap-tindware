@@ -65,7 +65,10 @@
                 }
                 ?>
                 <li class="nav-item">
-                    Hola, <?php echo @$datosUser['username'] ?>. <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
+                    <a href="perfil.php" class"nav-link text-white">Perfil de <?php echo @$datosUser['username'] ?>.</a>
+                </li>
+                <li class="nav-item">
+                    <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
                 </li>
                 <?php
                 if ($id_user == 0) {
