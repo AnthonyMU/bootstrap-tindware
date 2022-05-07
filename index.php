@@ -20,41 +20,14 @@
     
 <body>
     <?php
-    @include 'inc/constantes.php';
-    @include 'inc/obtenerDatosUser.php';
-    
+    # Cargar constantes
+    include 'inc/constantes.php';
+    # Cargamos cookies
+    include 'inc/obtenerCookies.php';
+    # Incluir header
+    include 'inc/header.php';
     ?>
 
-    <!--menu-->
-   <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
-        <div class="container">
-            <button 
-            class="navbar-toggler" 
-            type="buttom" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <!-- Aqui la barra de navegacion-->
-        <div class="collapse navbar-collapse" id="navmenu">
-            <a href="index.html" class="navbar-brand fs-1">TindWare</a>
-            <ul class="navbar-nav ms-auto lead">
-                <li class="nav-item">
-                    <a href="qs.html" class="nav-link text-white">Quienes somos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="FAQ.html" class="nav-link text-white">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="iniciosesion.html" class="nav-link text-white">Iniciar sesión</a>
-                </li>
-                <li class="nav-item">
-                    <a href="registro.html" class="nav-link  text-white">Registro</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-   </nav> 
    <!--Donde va el inicio de sesion-->
     <section class="text-light p-5 p-lg-3 pt-lg-5 text-center text-sm-start incio">
         <div class="row">
