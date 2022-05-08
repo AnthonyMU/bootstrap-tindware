@@ -27,11 +27,11 @@
                                 echo HIDE;
                             }
                             ?>
-                            <div class="row justify-content-around">
-                                <button id="button" class="btn btn-dark button" data-bs-toggle="modal" data-bs-target="#enroll">
+                            <div class="row" style="justify-content: space-evenly;">
+                                <button id="button" class="btn btn-dark button" data-bs-toggle="modal" data-bs-target="#enroll" style="margin: 0">
                                     Iniciar sesión
                                 </button>
-                                <button id="button" class="btn btn-dark button" onclick="location.href='registro.php';">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='registro.php';" style="margin: 0">
                                     ¡Regístrate ya!
                                 </button>
                             </div>
@@ -44,10 +44,10 @@
                             }
                             ?>
                             <div class="row justify-content-center">
-                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
                                     Crear oferta (cambiar)
                                 </button>
-                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
                                     Buscar oferta (cambiar)
                                 </button>
                             </div>
