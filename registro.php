@@ -10,12 +10,17 @@
     include 'inc/obtenerCookies.php';
     # Incluir header
     include 'inc/header.php';
+    
+    # Hidear registro si esta logueado
+    if ($id_user != 0) {
+        echo HIDE;
+    }
 ?> 
 
    <div class="container">
     <div class="row justify-content-center pt-5 mt-5 text-white">
         <div class="col-md-6 col-sm-8 col-lg-6 col-lg-5 formulario">
-            <form action="" method="">
+            <form action="do_registro.php" method="POST">
                     <div class="form-group text-center">
                         <h4>Registro de usuario</h4>
                         <div id="centrador">
@@ -23,22 +28,24 @@
                         </div>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input type="text" class="form-control" placeholder="Nombre de usuario">
+                        <input name="username" type="text" class="form-control" placeholder="Nombre de usuario">
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input type="password" class="form-control" placeholder="Contraseña">
+                        <input name="passwd" type="password" class="form-control" placeholder="Contraseña">
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input type="email" class="form-control" placeholder="Correo electrónico">
+                        <input name="email" type="email" class="form-control" placeholder="Correo electrónico">
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
+                        <h5>Tipo de usuario</h5>
                         <select class="form-control">
                             <option value="particular" class="select">Particular</option>
                             <option value="tecnico" class="select">Tecnico</option>
                         </select>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input type="date" class="form-control" placeholder="Fecha de nacimiento">
+                        <h5>Fecha de nacimiento</h5>
+                        <input name="fechanac" type="date" class="form-control" placeholder="Fecha de nacimiento">
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
                         <input type="submit" class="btn btn-block ingresar" value="Registrarse">
@@ -51,9 +58,23 @@
     </div>
    </div>
 
-   <!--Footer-->
+<?php
+if ($id_user != 0) {
+    echo HIDECLOSE;
+}
+# Si esta ya logeado ponemos error
+if ($id_user == 0) {
+    echo HIDE;
+}
+?>
+<p>Ya logeado</p>
 
 <?php
+if ($id_user == 0) {
+    echo HIDECLOSE;
+}
+
+
 include 'inc/footer.php';
 ?>
 
