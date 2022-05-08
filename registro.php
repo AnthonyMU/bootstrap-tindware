@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
     <title>Registro - Tindware</title>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/loc.js"></script>
+    <script src="scripts/registro.js"></script>
 </head>
 <body>
 <?php
@@ -47,6 +50,9 @@
                         <h5 style="text-align: center;">Fecha de nacimiento</h5>
                         <input name="fechanac" type="date" class="form-control" placeholder="Fecha de nacimiento" required>
                     </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="text" id="geocoding_input" placeholder="Escriba su dirección..."/> <button type="button" onclick="coordenadasDesdeGeocoding();">Asignar coordenadas</button><br/>
+                        Latitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/> Longitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/>
                     <div class="form-group mx-sm-4 pb-3">
                         <input type="submit" class="btn btn-block ingresar" value="Registrarse">
                     </div>
