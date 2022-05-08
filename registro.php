@@ -28,24 +28,24 @@
                         </div>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input name="username" type="text" class="form-control" placeholder="Nombre de usuario">
+                        <input name="username" type="text" class="form-control" placeholder="Nombre de usuario" required>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input name="passwd" type="password" class="form-control" placeholder="Contraseña">
+                        <input name="passwd" type="password" class="form-control" placeholder="Contraseña" required>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <input name="email" type="email" class="form-control" placeholder="Correo electrónico">
+                        <input name="email" type="email" class="form-control" placeholder="Correo electrónico" required>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <h5>Tipo de usuario</h5>
+                        <h5 style="text-align: center;">Tipo de usuario</h5>
                         <select class="form-control">
                             <option value="particular" class="select">Particular</option>
                             <option value="tecnico" class="select">Tecnico</option>
                         </select>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <h5>Fecha de nacimiento</h5>
-                        <input name="fechanac" type="date" class="form-control" placeholder="Fecha de nacimiento">
+                        <h5 style="text-align: center;">Fecha de nacimiento</h5>
+                        <input name="fechanac" type="date" class="form-control" placeholder="Fecha de nacimiento" required>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
                         <input type="submit" class="btn btn-block ingresar" value="Registrarse">
