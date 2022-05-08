@@ -27,7 +27,7 @@
                                 echo HIDE;
                             }
                             ?>
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-around">
                                 <button id="button" class="btn btn-dark button" data-bs-toggle="modal" data-bs-target="#enroll">
                                     Iniciar sesión
                                 </button>
