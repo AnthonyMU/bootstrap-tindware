@@ -38,7 +38,7 @@
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
                         <h5 style="text-align: center;">Tipo de usuario</h5>
-                        <select class="form-control">
+                        <select class="form-control" name="tipo" required>
                             <option value="particular" class="select">Particular</option>
                             <option value="tecnico" class="select">Tecnico</option>
                         </select>
