@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/footer.css">
     <link rel="stylesheet" type="text/css" href="estilos/header.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
  <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
         <div class="container">
             <button 
@@ -78,4 +78,3 @@
             </div>
         </div>
    </nav>
-</body>
