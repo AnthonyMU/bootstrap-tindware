@@ -43,7 +43,7 @@
                                 echo HIDE;
                             }
                             ?>
-                            <div class="row justify-content-center">
+                            <div class="row" style="justify-content: space-evenly;">
                                 <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
                                     Crear oferta (cambiar)
                                 </button>
