@@ -15,7 +15,7 @@
 
 <!--FAQ-->
 <section>  
-<div class="accordion accordion-flush py-4 p-5" id="accordionFlushExample">
+<div class="accordion accordion-flush py-4 p-5 lead" id="accordionFlushExample">
     <h2 class="text-center text-white py-4 ">Preguntas más frecuentes</h2>
     <div class="accordion-item faq text-white text-center">
       <h2 class="accordion-header faq text-center" id="flush-headingOne">
