@@ -19,7 +19,7 @@
     <h2 class="text-center text-white py-4 ">Preguntas más frecuentes</h2>
     <div class="accordion-item faq text-white text-center">
       <h2 class="accordion-header faq text-center" id="flush-headingOne">
-        <button class="accordion-button collapsed faq alinear" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne faq">
+        <button class="accordion-button collapsed faq alinear lead" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne faq">
           ¿Puedo elegir al técnico que va a solventar mi problema?
         </button>
       </h2>
