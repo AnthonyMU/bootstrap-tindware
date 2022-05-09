@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/qs.css">
     <link rel="stylesheet" type="text/css" href="estilos/footer.css">
     <link rel="stylesheet" type="text/css" href="estilos/header.css">
+    <link rel="stylesheet" type="text/css" href="estilos/faq.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
  <nav class="nav.navbar navbar-expand-lg  navbar-dark py-3 fixed-top menu">
