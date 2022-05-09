@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
     <title>FAQ - Tindware</title>
-    <link rel="stylesheet" type="text/css" href="estilos/faq.css">
   </head>
 <body>
 <?php
