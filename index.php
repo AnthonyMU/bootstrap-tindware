@@ -119,7 +119,7 @@
 
                     Además queremos ser unfa fuente de oprtunidades para aquellas personas con dificultades para encontrar un empleo pueda tener un oportunidad en este mercado en expansión.   
                 </p>
-                <a href="qs.html" class="btn-light mt-3">
+                <a href="qs.php" class="btn-light mt-3">
                     <i class="bi"></i>Saber más sobre nosotros</a>
             </div>
         </div>
