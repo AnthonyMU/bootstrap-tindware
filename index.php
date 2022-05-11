@@ -233,7 +233,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="img/Anthony.png" class="rounded-circle foto-equipo">
+                    <img src="img/anthony(1).jpg" class="rounded-circle foto-equipo">
                     <h3 class="card-title pt-2">
                         Anthony Murriel
                     </h3>
