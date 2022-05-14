@@ -202,7 +202,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="img/imagen.jpg" class="rounded-circle foto-equipo">
+                    <img src="img/krillin.png" class="rounded-circle foto-equipo">
                     <h3 class="card-title pt-2">
                         Alex Crespo
                     </h3>
