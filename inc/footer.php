@@ -5,15 +5,15 @@
                     <div class="col-lg-4 col-md-6 footer-links">
                         <h4>Links de utilidad</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="qs.html">Quienes somos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../index.php">Inicio</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../qs.php">Quienes somos</a></li>
                             <?php
                             if ($id_user != 0) {
                                 echo HIDE;
                             }
                             ?>
-                            <li><i class="bx bx-chevron-right"></i> <a href="iniciosesion.html">Iniciar sesion</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="registro.html">Registrarse</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../iniciosesion.php">Iniciar sesion</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../registro.php">Registrarse</a></li>
                             <?php
                             if ($id_user != 0) {
                                 echo HIDECLOSE;

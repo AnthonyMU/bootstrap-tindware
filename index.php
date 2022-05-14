@@ -112,7 +112,7 @@
                 <img src="img/cerebro.png" class="img-fluid align" width="350">
             </div>
             <div class="col-md  icono">
-                <h2 class="text-white">EL servicio que ofrecemos</h2>
+                <h2 class="text-white">El servicio que ofrecemos</h2>
                
                 <p class="lead text-white card-text justificador">
                     Nos centramos en ofrecer un servicio de calidad, orientado hacia todas las personas. Creemos que es importante que una sociedad tenga conocimientos en informática, ya que un futuro completamente informatizado está a la vuelta de la esquina. Por tanto, estamos plantando la semilla de un futuro sin preocupaciones, en el cuál un simple mensaje de texto o una llamada teléfonica ponga a tu disposicion a los mejores técnicos del mercado.
