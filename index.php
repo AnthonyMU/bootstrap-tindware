@@ -152,7 +152,7 @@
                 <!-- texto centrado-->
                 <div class="card-body text-center">
                     <!--la imagen se ha colocado con formato circular y la clase de css <<foto-equipo>>-->
-                    <img src="img/imagen.jpg" class="rounded-circle foto-equipo">
+                    <img src="img/materia-gris.png" class="rounded-circle foto-equipo">
                     <!-- Un padding top para separar el titulo de la imagen-->
                     <h3 class="card-title pt-2">
                         Asier Mejuto
@@ -170,7 +170,7 @@
         <div class="col-md-6 col-lg-4 text-white ">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="img/ander.png" class="rounded-circle foto-equipo">
+                    <img src="img/goku.png" class="rounded-circle foto-equipo">
                     <h3 class="card-title pt-2">
                         Ander Herrero
                     </h3>
@@ -186,7 +186,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="img/prueba.jpg" class="rounded-circle foto-equipo">
+                    <img src="img/diamante.png" class="rounded-circle foto-equipo">
                     <h3 class="card-title pt-2">
                         José Luis Villalba
                     </h3>
@@ -218,7 +218,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-body text-center">
-                    <img src="img/adrian.jpg" class="rounded-circle foto-equipo">
+                    <img src="img/stich.png" class="rounded-circle foto-equipo">
                     <h3 class="card-title pt-2">
                         Adrián Martinez
                     </h3>
