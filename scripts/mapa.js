@@ -77,11 +77,12 @@ function obtenerOfertasCercanas(lat, lon) {
 
             $("#resultados").empty();
             for (i = 0; i < ofertas.length; i++) {
-                $("#resultados").append($("<div>").attr("id", "oferta" + i.toString))
-                $("#oferta" + i.toString).append($("<h3>").text(ofertas[i]["titulo"])).attr("onclick()", "window.location.href = 'viewOferta.php?id=" + ofertas[i]["id"] + "'");
-                $("#oferta" + i.toString).append($("<p>").text(ofertas[i]["descripcion"]))
-                $("#oferta" + i.toString).append($("<p>").text("Distancia: " + ofertas[i]["distance"] + " km"))
-                $("#oferta" + i.toString).append($("<p>").text("Usuario: " + ofertas[i]["username"]))
+                var idOfertaHTML = concat("oferta", i.toString)
+                $("#resultados").append($("<div>").attr("id", idOfertaHTML))
+                $(concat("#", idOfertaHTML)).append($("<h3>").text(ofertas[i]["titulo"])).attr("onclick()", "window.location.href = 'viewOferta.php?id=" + ofertas[i]["id"] + "'");
+                $(concat("#", idOfertaHTML)).append($("<p>").text(ofertas[i]["descripcion"]))
+                $(concat("#", idOfertaHTML)).append($("<p>").text("Distancia: " + ofertas[i]["distance"] + " km"))
+                $(concat("#", idOfertaHTML)).append($("<p>").text("Usuario: " + ofertas[i]["username"]))
             }
         }
     }
