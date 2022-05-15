@@ -113,10 +113,7 @@ async function getLocForm() {
         console.log("UPDATE texto: " + texto);
         updateGMaps(undefined, undefined, texto);
         //Ahora obtenemos las coords desde 
-        let promise = await coordenadasDesdeGeocoding(texto)
-        let promise2 = promise.Then(objeto => {
-            console.log(`UPDATE lat: ${objeto[0]} lon: ${objeto[1]} name: ${objeto[2]}`)
-        })
+        coordenadasDesdeGeocoding(texto)
     }
 }
 
