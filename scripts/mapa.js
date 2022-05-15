@@ -67,13 +67,11 @@ function obtenerOfertasCercanas(lat, lon) {
 
             for ( i = 0; i < ofertas.length; i++) {
                 ofertas[i]["distance"] = calculateDistance(lat,lon,ofertas[i]["lat"],ofertas[i]["lon"]);
+                console.log(ofertas[i]["distance"]);
               }
             console.log(ofertas)
 
-            ofertas.sort(function(a, b) { 
-                return a.distance - b.distance;
-              });
-            console.log(ofertas)
+            
         }
     }
 }
