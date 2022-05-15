@@ -20,13 +20,6 @@
         $latPart = $resultadoTemp['lat'];
         $lonPart = $resultadoTemp['lon'];
 
-
-        echo "$titulo";
-        echo "$id_oferta<br/>";
-        echo "Username: $id_usuariopart<br/>";
-        echo "Lat: $latPart<br/>";
-        echo "Lon: $lonPart<br/>";
-        echo "</div>";
         $ofertas[$i] = array('id' => $id_oferta, 'titulo' => $titulo, 'username' => $usernamePart, 'lat' => $latPart, 'lon' => $lonPart);
         $i++;
     }

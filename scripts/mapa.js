@@ -45,7 +45,24 @@ function obtenerOfertasCercanas(lat, lon) {
         var y = b[0] / b[1];
     }
 
-    queryOfertasPHP 
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", "tindware.duckdns.org/scripts/ofertasJSON.php");
+    xmlHttp.send();
+    xmlHttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var ofertas = JSON.parse(this.responseText);
+            console.log(ofertas)
+            // var ofertasCercanas = [];
+            // var ofertasCercanas = ofertas.filter(function(oferta) {
+            //     var latLon = [oferta.lat, oferta.lon];
+            //     var distancia = getDistanceFromLatLonInKm(lat, lon, oferta.lat, oferta.lon);
+            //     if (distancia < 0.5) {
+            //         return oferta;
+            //     }
+            // });
+            // console.log(ofertasCercanas)
+        }
+    }
 }
 
 function updateGMaps(lat, lon, query) {
