@@ -1,5 +1,7 @@
 var lat = "";
 var lon = "";
+boton = document.getElementById("buttonMostrar");
+boton.onclick = await getLocForm();
 
 async function obtenerLatLon() {
     
@@ -152,7 +154,5 @@ $(document).ready(async function() {
         $("#gmap_antes").hide();
         $("#gmap_noseguro").show();
     }
-    boton = document.getElementById("buttonMostrar");
-    boton.onclick = await getLocForm();
 });
 
