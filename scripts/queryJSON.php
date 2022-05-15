@@ -1,4 +1,6 @@
 <?php
+    $ofertas = array();
+    $i = 0;
     include 'inc/constantes.php';
     $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
     $query = "SELECT id, id_usuariopart, titulo, fechacreacion  FROM tindware.ofertas WHERE fechaasignado IS NULL;";
@@ -25,5 +27,8 @@
         echo "Lat: $latPart<br/>";
         echo "Lon: $lonPart<br/>";
         echo "</div>";
+        $ofertas[$i] = array('id' => $id_oferta, 'titulo' => $titulo, 'username' => $usernamePart, 'lat' => $latPart, 'lon' => $lonPart);
+        $i++;
     }
+    echo json_encode($ofertas);
 ?>
