@@ -88,7 +88,7 @@ function obtenerOfertasCercanas(lat, lon) {
     }
 }
 
-function updateGMaps(lat, lon, query) {
+async function updateGMaps(lat, lon, query) {
     var urlTemplate = "https://maps.google.com/maps?q=QUERY&t=&z=13&ie=UTF8&iwloc=&output=embed";
     if (query === undefined) {
         var query = lat + ',' + lon;
@@ -111,9 +111,7 @@ async function getLocForm() {
     }
     else {
         console.log("UPDATE texto: " + texto);
-        updateGMaps(undefined, undefined, texto);
-        //Ahora obtenemos las coords desde 
-        await coordenadasDesdeGeocoding(texto)
+        await updateGMaps(undefined, undefined, texto);
     }
 }
 
@@ -142,7 +140,7 @@ $(document).ready(async function() {
                 var lat = promiseLatLon.coords.latitude.toString();
                 var lon = promiseLatLon.coords.longitude.toString();
                 console.log(`UPDATE lat: ${lat} lon: ${lon}`)
-                updateGMaps(lat, lon);
+                await updateGMaps(lat, lon);
             }
         }
         else {
