@@ -185,7 +185,7 @@
         echo HIDECLOSE;
     }
     mysqli_close($con);
-    include 'footer.php';
+    include 'inc/footer.php';
     ?>
 </body>
 </html>
