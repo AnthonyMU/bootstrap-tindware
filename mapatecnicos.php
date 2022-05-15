@@ -36,7 +36,7 @@
         <div id="columna">
             <span class="titulo_columna">Resultados de la busqueda</span><br/>
             <input type="text" id="inputMostrar" placeholder="Introduce tu lugar..."/>
-            <button id="buttonMostrar" onclick="getLocForm()">Mostrar</button>
+            <button id="buttonMostrar" onclick="await getLocForm()">Mostrar</button>
             <div id="resultados"></div>
         </div>
     </div>
