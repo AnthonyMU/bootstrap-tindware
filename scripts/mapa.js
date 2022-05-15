@@ -66,7 +66,7 @@ function obtenerOfertasCercanas(lat, lon) {
             console.log(ofertas);
 
             for ( i = 0; i < ofertas.length; i++) {
-                ofertas[i]["distance"] = calculateDistance(lat,lon,ofertas[i]["lat"],uniqueNodes[i]["lon"]);
+                ofertas[i]["distance"] = calculateDistance(lat,lon,ofertas[i]["lat"],ofertas[i]["lon"]);
               }
             console.log(ofertas)
 
