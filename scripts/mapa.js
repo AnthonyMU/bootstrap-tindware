@@ -71,8 +71,8 @@ function obtenerOfertasCercanas(lat, lon) {
               }
             console.log(ofertas)
 
-            ofertas.sort(function (a, b) {
-                return a.distance.localeCompare(b.distance);
+            ofertas.sort(function(a, b){
+                return a.distance - b.distance;
             });
 
             console.log(ofertas);
