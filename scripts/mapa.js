@@ -40,6 +40,12 @@ async function coordenadasDesdeGeocoding(query) {
 
 function obtenerOfertasCercanas(lat, lon) {
     // Como sortear las ofertas: https://stackoverflow.com/a/42983430
+    function sortLngLat(a, b){
+        var x = a[0] / a[1];
+        var y = b[0] / b[1];
+    }
+
+    queryOfertasPHP 
 }
 
 function updateGMaps(lat, lon, query) {
