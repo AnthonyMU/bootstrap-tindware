@@ -13,7 +13,7 @@
         
         
         $queryPart = "SELECT username, lat, lon FROM tindware.usuario WHERE id = $id_usuariopart;";
-        $outTemp = mysqli_query($con, $queryUbi);
+        $outTemp = mysqli_query($con, $queryPart);
         $resultadoTemp = mysqli_fetch_array($outTemp);
 
         $usernamePart = $resultadoTemp['username'];
