@@ -1,3 +1,6 @@
+var lat = "";
+var lon = "";
+
 async function obtenerLatLon() {
     
     function geoloc_ok(pos) {
@@ -15,7 +18,7 @@ async function obtenerLatLon() {
     });
 }
 
-async function coordenadasDesdeGeocoding(query) {
+function coordenadasDesdeGeocoding(query) {
     var apikey = "2a6ef58c88ad4fd9810b422c5348c25e" // en produccion esto no deberia estar asi c:;
     var requestOptions = {
         method: "GET",
@@ -39,6 +42,7 @@ async function coordenadasDesdeGeocoding(query) {
 }
 
 function obtenerOfertasCercanas(lat, lon) {
+    console.log("Hemos recibido lat: " + lat + " lon: " + lon);
     // Como sortear las ofertas: https://stackoverflow.com/a/42983430
     function sortLngLat(a, b){
         var x = a[0] / a[1];
@@ -65,18 +69,15 @@ function obtenerOfertasCercanas(lat, lon) {
     }
 }
 
-async function updateGMaps(lat, lon, query) {
+function updateGMaps(lat, lon, query) {
     var urlTemplate = "https://maps.google.com/maps?q=QUERY&t=&z=13&ie=UTF8&iwloc=&output=embed";
     if (query === undefined) {
         var query = lat + ',' + lon;
     }
     if (lat === undefined) {
-        let promise = await coordenadasDesdeGeocoding(query)
-        promise.Then(objeto => {
-            lat = objeto.lat;
-            lon = objeto.lon;
-        })
-    }
+        coordenadasDesdeGeocoding(query);
+        console.log("YA HECHO GEOCODING: lat: " + lat + " lon: " + lon);
+        }
     var url = urlTemplate.replace('QUERY', query);
     $("#gmap").attr('src', url);
     $("#gmap_antes").hide();
@@ -91,7 +92,7 @@ async function getLocForm() {
     }
     else {
         console.log("UPDATE texto: " + texto);
-        await updateGMaps(undefined, undefined, texto);
+        updateGMaps(undefined, undefined, texto);
         //Ahora obtenemos las coords desde 
         let promise = await coordenadasDesdeGeocoding(texto)
         let promise2 = promise.Then(objeto => {
@@ -125,7 +126,7 @@ $(document).ready(async function() {
                 var lat = promiseLatLon.coords.latitude.toString();
                 var lon = promiseLatLon.coords.longitude.toString();
                 console.log(`UPDATE lat: ${lat} lon: ${lon}`)
-                await updateGMaps(lat, lon);
+                updateGMaps(lat, lon);
             }
         }
         else {
