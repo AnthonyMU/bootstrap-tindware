@@ -63,19 +63,26 @@ function obtenerOfertasCercanas(lat, lon) {
     xmlHttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var ofertas = JSON.parse(this.responseText);
-            console.log(ofertas);
 
             for ( i = 0; i < ofertas.length; i++) {
                 ofertas[i]["distance"] = calculateDistance(lat,lon,ofertas[i]["lat"],ofertas[i]["lon"]);
                 console.log(ofertas[i]["distance"]);
               }
-            console.log(ofertas)
 
             ofertas.sort(function(a, b){
                 return a.distance - b.distance;
             });
 
             console.log(ofertas);
+
+            $("#resultados").empty();
+            for (i = 0; i < ofertas.length; i++) {
+                $("#resultados").append($("<div>").attr("id", "oferta" + i.toString))
+                $("#oferta" + i.toString).append($("<h3>").text(ofertas[i]["titulo"])).attr("onclick()", "window.location.href = 'viewOferta.php?id=" + ofertas[i]["id"] + "'");
+                $("#oferta" + i.toString).append($("<p>").text(ofertas[i]["descripcion"]))
+                $("#oferta" + i.toString).append($("<p>").text("Distancia: " + ofertas[i]["distance"] + " km"))
+                $("#oferta" + i.toString).append($("<p>").text("Usuario: " + ofertas[i]["username"]))
+            }
         }
     }
 }
