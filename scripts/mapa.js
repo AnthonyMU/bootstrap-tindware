@@ -1,7 +1,7 @@
 var lat = "";
 var lon = "";
 boton = document.getElementById("buttonMostrar");
-boton.onclick = getLocForm2();
+boton.onclick = await getLocForm();
 
 async function obtenerLatLon() {
     
@@ -117,10 +117,6 @@ async function getLocForm() {
         //Ahora obtenemos las coords desde 
         await coordenadasDesdeGeocoding(texto)
     }
-}
-
-function getLocForm2() {
-    await getLocForm();
 }
 
 $(function(){
