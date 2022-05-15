@@ -74,6 +74,7 @@ function updateGMaps(lat, lon, query) {
     $("#gmap").attr('src', url);
     $("#gmap_antes").hide();
     $("#gmap").show();
+    obtenerOfertasCercanas(lat, lon);
 }
 
 async function getLocForm() {
