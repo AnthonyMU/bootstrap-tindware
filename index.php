@@ -44,7 +44,7 @@
                             }
                             ?>
                             <div class="row" style="justify-content: space-evenly;">
-                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='crearOferta.php';" style="margin: 0">
                                     Crear oferta (cambiar)
                                 </button>
                                 <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
