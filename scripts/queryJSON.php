@@ -1,4 +1,5 @@
 <?php
+    include 'inc/constantes.php';
     $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
     $query = "SELECT id, id_usuariopart, titulo, fechacreacion  FROM tindware.ofertas WHERE fechaasignado IS NULL;";
     $out = mysqli_query($con, $query);
