@@ -71,7 +71,11 @@ function obtenerOfertasCercanas(lat, lon) {
               }
             console.log(ofertas)
 
-            
+            ofertas.sort(function (a, b) {
+                return a.distance.localeCompare(b.distance);
+            });
+
+            console.log(ofertas);
         }
     }
 }
