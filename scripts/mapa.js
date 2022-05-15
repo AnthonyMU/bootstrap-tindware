@@ -70,6 +70,13 @@ function updateGMaps(lat, lon, query) {
     if (query === undefined) {
         var query = lat + ',' + lon;
     }
+    if (lat === undefined) {
+        let promise = await coordenadasDesdeGeocoding(query)
+        promise.Then(objeto => {
+            lat = objeto.lat;
+            lon = objeto.lon;
+        })
+    }
     var url = urlTemplate.replace('QUERY', query);
     $("#gmap").attr('src', url);
     $("#gmap_antes").hide();
