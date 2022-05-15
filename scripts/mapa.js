@@ -50,7 +50,7 @@ function obtenerOfertasCercanas(lat, lon) {
     }
 
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "tindware.duckdns.org/scripts/ofertasJSON.php");
+    xmlHttp.open("GET", "scripts/ofertasJSON.php");
     xmlHttp.send();
     xmlHttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
