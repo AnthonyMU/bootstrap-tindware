@@ -43,28 +43,37 @@ function coordenadasDesdeGeocoding(query) {
 
 function obtenerOfertasCercanas(lat, lon) {
     console.log("Hemos recibido lat: " + lat + " lon: " + lon);
-    // Como sortear las ofertas: https://stackoverflow.com/a/42983430
-    function sortLngLat(a, b){
-        var x = a[0] / a[1];
-        var y = b[0] / b[1];
+    // Como sortear las ofertas: https://stackoverflow.com/a/26837460
+    function calculateDistance(lat1, lon1, lat2, lon2) {
+        var radlat1 = Math.PI * lat1/180
+        var radlat2 = Math.PI * lat2/180
+        var theta = lon1-lon2
+        var radtheta = Math.PI * theta/180
+        var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+        dist = Math.acos(dist)
+        dist = dist * 180/Math.PI
+        dist = dist * 60 * 1.1515
+        dist = dist * 1.609344 // km
+        return dist
     }
-
+    
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "scripts/queryJSON.php");
     xmlHttp.send();
     xmlHttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var ofertas = JSON.parse(this.responseText);
+            console.log(ofertas);
+
+            for ( i = 0; i < ofertas.length; i++) {
+                ofertas[i]["distance"] = calculateDistance(lat,lon,ofertas[i]["lat"],uniqueNodes[i]["lon"]);
+              }
             console.log(ofertas)
-            // var ofertasCercanas = [];
-            // var ofertasCercanas = ofertas.filter(function(oferta) {
-            //     var latLon = [oferta.lat, oferta.lon];
-            //     var distancia = getDistanceFromLatLonInKm(lat, lon, oferta.lat, oferta.lon);
-            //     if (distancia < 0.5) {
-            //         return oferta;
-            //     }
-            // });
-            // console.log(ofertasCercanas)
+
+            ofertas.sort(function(a, b) { 
+                return a.distance - b.distance;
+              });
+            console.log(ofertas)
         }
     }
 }
