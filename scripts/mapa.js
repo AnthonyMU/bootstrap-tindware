@@ -152,5 +152,7 @@ $(document).ready(async function() {
         $("#gmap_antes").hide();
         $("#gmap_noseguro").show();
     }
+    boton = document.getElementById("buttonMostrar");
+    boton.addEventListener("click", await getLocForm());
 });
 
