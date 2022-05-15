@@ -153,6 +153,6 @@ $(document).ready(async function() {
         $("#gmap_noseguro").show();
     }
     boton = document.getElementById("buttonMostrar");
-    boton.addEventListener("click", await getLocForm());
+    await boton.addEventListener("click", await getLocForm());
 });
 
