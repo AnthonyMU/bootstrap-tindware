@@ -12,7 +12,7 @@
         $id_usuariopart = $resultado['id_usuariopart'];
         
         
-        $queryPart = "SELECT username, lat, lon FROM tindware.usuario WHERE id = $id_usuariopart; AND lat BETWEEN $latmin AND $latmax AND lon BETWEEN $lonmin AND $lonmax";
+        $queryPart = "SELECT username, lat, lon FROM tindware.usuario WHERE id = $id_usuariopart;";
         $outTemp = mysqli_query($con, $queryUbi);
         $resultadoTemp = mysqli_fetch_array($outTemp);
 
