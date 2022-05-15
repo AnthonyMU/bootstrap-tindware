@@ -39,22 +39,34 @@
                             if ($id_user != 0) {
                                 echo HIDECLOSE;
                             }
-                            if ($id_user == 0) {
+                            if ($type_user != "particular") {
                                 echo HIDE;
                             }
                             ?>
                             <div class="row" style="justify-content: space-evenly;">
                                 <button id="button" class="btn btn-dark button" onclick="location.href='crearOferta.php';" style="margin: 0">
-                                    Crear oferta (cambiar)
+                                    Crear incidencia
                                 </button>
                                 <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
-                                    Buscar oferta (cambiar)
+                                    Ver mis incidencias
                                 </button>
                             </div>
                             <?php
-                            if ($id_user == 0) {
+                            if ($type_user != "particular") {
                                 echo HIDECLOSE;
-                            }?>
+                            }
+                            if ($type_user != "tecnico") {
+                                echo HIDE;
+                            }
+                            ?>
+                            <div class="row" style="justify-content: space-evenly;">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
+                                    Buscar una incidencia
+                                </button>
+                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
+                                    Ver incidencias asignadas
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
