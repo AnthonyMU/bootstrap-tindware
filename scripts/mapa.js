@@ -90,7 +90,7 @@ function obtenerOfertasCercanas(lat, lon) {
     }
 }
 
-function updateGMaps(lat, lon, query) {
+async function updateGMaps(lat, lon, query) {
     var urlTemplate = "https://maps.google.com/maps?q=QUERY&t=&z=13&ie=UTF8&iwloc=&output=embed";
     if (query === undefined) {
         var query = lat + ',' + lon;
