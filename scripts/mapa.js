@@ -1,7 +1,7 @@
 var lat = "";
 var lon = "";
 boton = document.getElementById("buttonMostrar");
-boton.onclick = await getLocForm();
+boton.onclick = getLocForm2();
 
 async function obtenerLatLon() {
     
@@ -115,6 +115,10 @@ async function getLocForm() {
         console.log("UPDATE texto: " + texto);
         await updateGMaps(undefined, undefined, texto);
     }
+}
+
+function getLocForm2() {
+    await getLocForm();
 }
 
 $(function(){
