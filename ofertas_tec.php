@@ -3,7 +3,7 @@
 <head>
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="scripts/ofertas_tec.js"></script>
-    <link rel="stylesheet" href="css/ofertas.css" type="text/css"/>
+    <link rel="stylesheet" href="estilos/ofertas.css" type="text/css"/>
     <title>Ofertas - Tindware</title>
 </head>
 <body>
