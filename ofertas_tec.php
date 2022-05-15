@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <script src="scripts/jquery-3.6.0.min.js"></script>
-    <script src="scripts/ofertas_part.js"></script>
-    <link rel="stylesheet" href="estilos/ofertas.css" type="text/css"/>
-    <title>Mis ofertas - Tindware</title>
+    <script src="scripts/ofertas_tec.js"></script>
+    <link rel="stylesheet" href="css/ofertas.css" type="text/css"/>
+    <title>Ofertas - Tindware</title>
 </head>
 <body>
     <?php
@@ -14,7 +14,7 @@
     include 'inc/obtenerCookies.php';
     # Header
     include 'inc/header.php';
-    if ($type_user == 'particular' or $type_user == 'admin') {
+    if ($type_user == 'tecnico' or $type_user == 'admin') {
         $permitido = true;
     }
     else {
@@ -40,16 +40,16 @@
         if ($permitido) {
             $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
             
-            $queryOfertasNuevas = "SELECT * FROM tindware.ofertas WHERE id_usuariopart = $id_user AND fechafinalizacion IS NULL;";
-            $queryOfertasEnProceso = "SELECT * FROM tindware.ofertas WHERE id_usuariopart IS NULL;";
-            $queryOfertasTerminadas = "SELECT * FROM tindware.ofertas WHERE id_usuariopart = $id_user AND fechafinalizacion IS NOT NULL;";
+            $queryOfertasPendientes = "SELECT * FROM tindware.ofertas WHERE id_usuariotec = $id_user AND fechafinalizacion IS NULL;";
+            $queryOfertasDisponibles = "SELECT * FROM tindware.ofertas WHERE id_usuariotec IS NULL;";
+            $queryOfertasTerminadas = "SELECT * FROM tindware.ofertas WHERE id_usuariotec = $id_user AND fechafinalizacion IS NOT NULL;";
 
-            $outNuevas = mysqli_query($con, $queryOfertasNuevas);
-            $outEnProceso = mysqli_query($con, $queryOfertasEnProceso);
+            $outPendientes = mysqli_query($con, $queryOfertasPendientes);
+            $outDisponibles = mysqli_query($con, $queryOfertasDisponibles);
             $outTerminadas = mysqli_query($con, $queryOfertasTerminadas);
 
-            $nuevasVacio = outVacio($outNuevas);
-            $enProcesoVacio = outVacio($outEnProceso);
+            $pendientesVacio = outVacio($outPendientes);
+            $disponiblesVacio = outVacio($outDisponibles);
             $terminadasVacio = outVacio($outTerminadas);
 
             function mostrarOfertas($out, $con, $clickable, $tipo) {
@@ -73,20 +73,18 @@
                     echo "<div class='oferta'>";
                     echo "<span class='tituloOferta'>$titulo</span><br/>";
                     echo "$descripcion<br/>";
-                    if ($tipo = 'disponible') {
-                        echo "<span class='iroferta'><a href='viewOferta.php?id=$id_oferta'>Ver más</a></span><br/>";
-                    }
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
+                    echo "<input type='button' onclick=$miOnclick";
                     #if (!$clickable) {echo " disbaled";}
                     #if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
                     if ($tipo == 'disponible') {
-                      
+                        echo " value='Asignar'";
                     }
                     else {
                         echo " value='Terminar'";
                     }
                     if (!$clickable) { echo " disabled"; }
-                    echo "</input>";
+                    echo "></input>";
                     echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
                     echo "</div>";
                 }
@@ -97,53 +95,52 @@
         <div id="menuBotones">
             <h1>Seleccione filtro</h1>
             <table>
-                <tr><td><a class="botonOfertas" class="crearOferta" href="crearOferta.php">Crea una nueva incidencia</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botoNuevas" href="#" onclick="showNuevas();">Incidencias sin asignar</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonEnProceso" href="#" onclick="showEnProceso();">Incidencias en proceso</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonHistorial" href="#" onclick="showTerminadas();">Historial de incidencias</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td></tr>
             </table>
         </div>
         <div id="ofertas">
-            <div class="ensenarOferta" id="ofertasNuevas">
+            <div class="ensenarOferta" id="ofertasPendientes">
                 <?php
-                if ($nuevasVacio) {
+                if ($pendientesVacio) {
                     echo HIDE;
                 }
 
-                mostrarOfertas($outNuevas, $con, true, "pendiente");
+                mostrarOfertas($outPendientes, $con, true, "pendiente");
 
-                if ($nuevasVacio) {
+                if ($pendientesVacio) {
                     echo HIDECLOSE;
                 }
 
-                if (!$nuevasVacio) {
+                if (!$pendientesVacio) {
                     echo HIDE;
                 }?>
-                No tienes ninguna incidencia
+                No tienes ninguna incidencia todavia
                 <?php
-                if (!$nuevasVacio) {
+                if (!$pendientesVacio) {
                     echo HIDECLOSE;
                 }?>
             </div>
 
-            <div class="ensenarOferta" id="ofertasEnProceso">
+            <div class="ensenarOferta" id="ofertasDisponibles">
                 <?php
-                if ($enProcesoVacio) {
+                if ($disponiblesVacio) {
                     echo HIDE;
                 }
 
-                mostrarOfertas($outEnProceso, $con, true, "disponible");
+                mostrarOfertas($outDisponibles, $con, true, "disponible");
 
-                if ($enProcesoVacio) {
+                if ($disponiblesVacio) {
                     echo HIDECLOSE;
                 }
                 
-                if (!$enProcesoVacio) {
+                if (!$disponiblesVacio) {
                     echo HIDE;
                 }?>
-                No tienes ninguna incidencia en proceso
+                No se ha encontrado ninguna incidencia
                 <?php
-                if (!$enProcesoVacio) {
+                if (!$disponiblesVacio) {
                     echo HIDECLOSE;
                 }?>
             </div>
@@ -163,7 +160,7 @@
                 if (!$terminadasVacio) {
                     echo HIDE;
                 }?>
-                No se ha terminado ninguna incidencia
+                Todavía no has terminado ninguna incidencia
                 <?php
                 if (!$terminadasVacio) {
                     echo HIDECLOSE;
@@ -184,7 +181,6 @@
         echo HIDECLOSE;
     }
     mysqli_close($con);
-    include 'inc/footer.php';
     ?>
 </body>
 </html>
