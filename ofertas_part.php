@@ -98,10 +98,10 @@
         <div id="menuBotones">
             <h1>Seleccione filtro</h1>
             <table>
-                <tr><td><a class="botonOfertas" class="crearOferta" href="crearOferta.php">Crea una nueva oferta</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botoNuevas" href="#" onclick="showNuevas();">Ofertas nuevas</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonEnProceso" href="#" onclick="showEnProceso();">Ofertas en proceso</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonHistorial" href="#" onclick="showTerminadas();">Historial de ofertas</a></td></tr>
+                <tr><td><a class="botonOfertas" class="crearOferta" href="crearOferta.php">Crea una nueva incidencia</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botoNuevas" href="#" onclick="showNuevas();">Incidencias nuevas</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonEnProceso" href="#" onclick="showEnProceso();">Incidencias en proceso</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonHistorial" href="#" onclick="showTerminadas();">Historial de incidencias</a></td></tr>
             </table>
         </div>
         <div id="ofertas">
@@ -120,7 +120,7 @@
                 if (!$nuevasVacio) {
                     echo HIDE;
                 }?>
-                No tienes ninguna oferta
+                No tienes ninguna incidencia
                 <?php
                 if (!$nuevasVacio) {
                     echo HIDECLOSE;
@@ -142,7 +142,7 @@
                 if (!$enProcesoVacio) {
                     echo HIDE;
                 }?>
-                No tienes ninguna oferta en proceso
+                No tienes ninguna incidencia en proceso
                 <?php
                 if (!$enProcesoVacio) {
                     echo HIDECLOSE;
@@ -164,7 +164,7 @@
                 if (!$terminadasVacio) {
                     echo HIDE;
                 }?>
-                No se ha terminado ninguna oferta
+                No se ha terminado ninguna incidencia
                 <?php
                 if (!$terminadasVacio) {
                     echo HIDECLOSE;
