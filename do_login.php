@@ -58,8 +58,8 @@
         ?>
         <div class="container-fluid lead texto" id="dologin_success">
 
-        <h5>Bienvenido de nuevo, <?php echo $username ?>. 
-        <a href="index.php" class="volver">Volver al inicio</a></h5>
+        <h6>Bienvenido de nuevo, <?php echo $username ?>. 
+        <a href="index.php" class="volver">Volver al inicio</a></h6>
         </div>
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success

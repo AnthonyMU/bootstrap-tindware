@@ -20,7 +20,7 @@
     ?>
     <div id="dologout_success">
         
-        <h5>¡Hasta pronto <?php echo $datosUser['username'] ?>! Has cerrado sesión correctamente. <a href="index.php" class="volver"> Volver al inicio</a></h5>
+        <h6>¡Hasta pronto <?php echo $datosUser['username'] ?>! Has cerrado sesión correctamente. <a href="index.php" class="volver"> Volver al inicio</a></h6>
     </div>
     <?php
     # Si el usuario no ha introducido los datos correctos escondemos el div de success
@@ -36,7 +36,7 @@
      }
     ?>
     <div id="dologout_error">
-        <h5>¡Todavía no has iniciado sesión! <a href="iniciosesion.php" class="volver text-warning">Inicia sesión</a> o <a href="index.php" class="volver text-warning">vuelve al inicio</a>.</h5>
+        <h6>¡Todavía no has iniciado sesión! <a href="iniciosesion.php" class="volver text-warning">Inicia sesión</a> o <a href="index.php" class="volver text-warning">vuelve al inicio</a>.</h6>
         <!-- Error cuando ya has iniciado sesión -->
     </div>
     <?php
