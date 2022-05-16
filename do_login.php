@@ -56,9 +56,9 @@
             echo HIDE;
         }
         ?>
-        <div class="container-fluid lead" id="dologin_success">
+        <div class="container-fluid lead texto" id="dologin_success">
 
-        <h1 class="lead">Bienvenido de nuevo, <?php echo $username ?>. 
+        <h1>Bienvenido de nuevo, <?php echo $username ?>. 
         <p><a href="index.php" class="volver">Volver al inicio</a></h1>
         </div>
         <?php
