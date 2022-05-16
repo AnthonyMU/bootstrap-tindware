@@ -93,14 +93,14 @@
 
         }?>
         <div id="menuBotones">
-            <h1>Seleccione filtro</h1>
+            <h1 class="lead">Seleccione filtro</h1>
             <table>
                 <tr><td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td></tr>
                 <tr><td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td></tr>
                 <tr><td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td></tr>
             </table>
         </div>
-        <div id="ofertas">
+        <div id="ofertas" class="lead">
             <div class="ensenarOferta" id="ofertasPendientes">
                 <?php
                 if ($pendientesVacio) {
