@@ -23,7 +23,7 @@
                 <div class="form-group text-center">
                     <h4 class="text-white">Inicio de sesión</h4>
                     <div id="centrador">
-                        <img> <i class="bi bi-box-arrow-in-right"></i></img>
+                        <img src="img/login2.png" class="rounded-circle img">  
                     </div>
                 </div>
                 <div class="form-group mx-sm-4 pb-3">
