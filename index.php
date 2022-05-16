@@ -39,22 +39,34 @@
                             if ($id_user != 0) {
                                 echo HIDECLOSE;
                             }
-                            if ($id_user == 0) {
+                            if ($type_user != "particular") {
                                 echo HIDE;
                             }
                             ?>
                             <div class="row" style="justify-content: space-evenly;">
-                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
-                                    Crear oferta (cambiar)
+                                <button id="button" class="btn btn-dark button" onclick="location.href='crearOferta.php';" style="margin: 0">
+                                    Crear incidencia
                                 </button>
-                                <button id="button" class="btn btn-dark button" onclick="location.href='noexiste.php';" style="margin: 0">
-                                    Buscar oferta (cambiar)
+                                <button id="button" class="btn btn-dark button" onclick="location.href='ofertas_part.php';" style="margin: 0">
+                                    Ver mis incidencias
                                 </button>
                             </div>
                             <?php
-                            if ($id_user == 0) {
+                            if ($type_user != "particular") {
                                 echo HIDECLOSE;
-                            }?>
+                            }
+                            if ($type_user != "tecnico") {
+                                echo HIDE;
+                            }
+                            ?>
+                            <div class="row" style="justify-content: space-evenly;">
+                                <button id="button" class="btn btn-dark button" onclick="location.href='mapatecnicos.php';" style="margin: 0">
+                                    Mapa de incidencias
+                                </button>
+                                <button id="button" class="btn btn-dark button" onclick="location.href='ofertas_tec.php';" style="margin: 0">
+                                    Ver incidencias
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

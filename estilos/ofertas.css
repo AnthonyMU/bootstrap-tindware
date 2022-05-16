@@ -1,0 +1,113 @@
+/* #main {
+    float 
+} */
+body{
+    font-family: arial;
+ 
+}
+#menuBotones {
+    width: 35%;
+    float: left;
+     background: linear-gradient(to bottom, #cbdce1 , white);
+ 
+}
+
+#menuBotones h1 {
+    text-align: center;
+    
+}
+
+#menuBotones table {
+    border-spacing: 12px;
+    margin: auto;
+}
+
+#menuBotones td {
+    background-color: #053041;
+    margin-bottom: 1000px;
+    border-radius: 3px;
+}
+#menuBotones td:hover{
+    background: #0069f8;
+}
+
+#ofertas a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+
+  
+}
+#ofertas a:hover{
+    color: #0069f8;
+}
+
+.botonOfertas {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+#ofertas {
+    width: 65%;
+    float: left;
+}
+
+#oferas:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ensenarOferta {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+    padding-top: 10px; 
+     background: linear-gradient(to bottom, #cbdce1 , white);
+
+}
+
+.oferta {
+    position: relative;
+    border: #053041 3px solid;
+    border-left: #053041 5px solid;
+    border-bottom: #053041 9px solid;
+    margin: 1%;
+    padding: 8px;
+    background:  #AEC6CF;
+}
+input{
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+input{
+    color: white;
+    background: black;
+    border: none;
+    border: 1px solid #00c2ae;
+}
+input:hover{
+    background: #c2c2c2;
+    transition: 0.1s;
+}
+.oferta:hover{
+
+    transition-duration: 0.5s;
+}
+
+.tituloOferta {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.ubicacion {
+    position: absolute;
+    bottom: 8px; /*lo mismo que padding de .oferta*/
+    left: 8px; /*lo mismo que padding de .oferta*/
+}
