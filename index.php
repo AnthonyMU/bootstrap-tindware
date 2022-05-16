@@ -174,7 +174,7 @@
                     <h3 class="card-title pt-2">
                         Ander Herrero
                     </h3>
-                    <p class="card-text"> Departamento de Hardware</p>
+                    <p class="card-text">Atención al cliente</p>
                     <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
                     <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
@@ -222,7 +222,7 @@
                     <h3 class="card-title pt-2">
                         Adrián Martinez
                     </h3>
-                    <p class="card-text">Marketing Y relaciones públicas</p>
+                    <p class="card-text">Marketing y relaciones públicas</p>
                     <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
                     <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
