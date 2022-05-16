@@ -36,7 +36,7 @@
                     <input type="submit" class="btn btn-block ingresar" value="Iniciar sesión">
                 </div>
                 <div class="form-group mx-sm-4 pb-3 text-center">
-                    <a href="registro.html" class="text-warning">¿No tienes una cuenta?</a>
+                    <a href="registro.php" class="text-warning">¿No tienes una cuenta?</a>
                 </div>
             </form>  
         </div>   
