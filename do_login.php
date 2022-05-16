@@ -49,17 +49,17 @@
          echo HIDE;
      }
     ?>
-    <div id="main">
+    <div class="container-fluid" id="main">
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success
         if (!$loginCorrecto) {
             echo HIDE;
         }
         ?>
-        <div id="dologin_success">
+        <div class="container-fluid lead" id="dologin_success">
 
-        <p class="bienvenido">Bienvenido de nuevo, <?php echo $username ?>. 
-        <p><a href="index.php" class="volver">Volver al inicio</a></p>
+        <h1 class="lead">Bienvenido de nuevo, <?php echo $username ?>. 
+        <p><a href="index.php" class="volver">Volver al inicio</a></h1>
         </div>
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success
@@ -74,7 +74,7 @@
             echo HIDE;
         }
         ?>
-        <div id="dologin_error">
+        <div class="container-fluid" id="dologin_error">
             <center class="bienvenido">El usuaio o la contraseña son inválidos. <a href="login.php" class="volver">Vuelve a intentarlo</a> o <a href="index.php" class="volver">vuelve al inicio</a></center>
             <!-- Error cuando ya has iniciado sesión -->
         </div>
