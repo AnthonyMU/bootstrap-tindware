@@ -92,15 +92,17 @@
 
 
         }?>
-        <div id="menuBotones">
-            <h1 class="lead">Seleccione filtro</h1>
-            <table>
-                <tr><td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td></tr>
-            </table>
-        </div>
-        <div id="ofertas" class="lead">
+        <div class="container">
+            <div class="row">
+                <div id="menuBotones" class="col-md">
+                    <h1 class="lead text-white">Seleccione filtro</h1>
+                        <table>
+                            <tr><td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td></tr>
+                            <tr><td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td></tr>
+                            <tr><td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td></tr>
+                        </table>
+                </div>
+              <div id="ofertas" class="lead col-md">
             <div class="ensenarOferta" id="ofertasPendientes">
                 <?php
                 if ($pendientesVacio) {
@@ -166,7 +168,11 @@
                     echo HIDECLOSE;
                 }?>
             </div>
+        </div>    
+            </div>
         </div>
+        
+      
     <?php
     if (!$permitido) {
         echo HIDECLOSE;
