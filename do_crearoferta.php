@@ -69,7 +69,7 @@
             echo HIDE;
         }
         ?>
-        <div id="docrearoferta_error" class="error">
+        <div id="docrearoferta_error" class="container error">
             <span>Error: <?php echo $mensajeError?></span>
         </div>
         <?php
@@ -80,8 +80,8 @@
             echo HIDE;
         }
         ?>
-        <div id="docrearoferta_success">
-            Se ha creado su oferta pulse <a href='<?php echo "viewOferta.php?id=$id_oferta";?>'>aqui</a> para visitarla
+        <div id="docrearoferta_success" class="container">
+            <h6>Se ha creado su oferta pulse <a href='<?php echo "viewOferta.php?id=$id_oferta";?>'>aqui</a> para visitarla</h6>
         </div>
         <?php
         if (!$registroCorrecto) {
