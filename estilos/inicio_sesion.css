@@ -83,6 +83,7 @@ body{
 }
 .coferta textarea{
     margin-top:10px;
+    padding-bottom: 100px;
 }
 .cc{
     background: rgba(0, 0, 0,0.6);
