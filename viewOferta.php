@@ -78,11 +78,15 @@
         echo HIDE;
     }
     ?>
-    <div>
-        <h1><?php echo $titulo ?></h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+            <h1><?php echo $titulo ?></h1>
         <p><?php echo $descripcion?></p>
         <p>Oferta creada por: <?php echo $username_usuariopart ?> el <?php $fechaCr = explode(' ', $fechacreacion); echo $fechaCr[0]." a las ".$fechaCr[1] ?></p>
-        <?php
+        </div>
+        </div>
+   <?php     
         if (!$asignadoFlag) {
             echo HIDE;
         }?>
