@@ -187,6 +187,9 @@
         echo HIDECLOSE;
     }
     mysqli_close($con);
+    
+    include 'inc/footer.php';
     ?>
+
 </body>
 </html>
