@@ -32,7 +32,7 @@ body{
 }
 
 .form-control::placeholder{
-    color:whitesmoke
+    color:white;
 
 }
 .form-control:focus{
@@ -50,7 +50,7 @@ body{
     background: rgba(0, 0, 0,0.6);
     padding: 10px;
     font-size: 16px;
-    color: whitesmoke;
+    color: white;
     transition: 0.15s ease-in;
     text-align: center;
     width: 50%;
@@ -59,7 +59,7 @@ body{
    
 }
 .ingresar:hover{
-    color: wheat;
+    color: yellow;
     background: rgba(0, 0, 0,1);
 }
 
@@ -83,4 +83,19 @@ body{
 }
 .coferta textarea{
     margin-top:10px;
+}
+.cc{
+    background: rgba(0, 0, 0,0.6);
+    font-size: 16px;
+    color: white;
+    transition: 0.15s cubic-bezier(0.42, 0.55, 1, 1);
+    text-align: center;
+    border: none;
+    display:block;
+    margin: auto;
+    margin-top:5px;
+}
+.cc:hover{
+    color: yellow;
+    background: rgba(0, 0, 0,1);
 }
