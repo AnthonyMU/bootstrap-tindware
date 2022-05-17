@@ -27,7 +27,7 @@
                     <div class="form-group text-center">
                         <h4>Registro de usuario</h4>
                         <div id="centrador">
-                            <img src="img/registro.jpg" class="rounded-circle img">
+                            <img src="img/registro.png" class="rounded-circle img">
                         </div>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
@@ -57,7 +57,7 @@
                         <input type="submit" class="btn btn-block ingresar" value="Registrarse">
                     </div>
                     <div class="form-group mx-sm-4 pb-3 text-center">
-                        <a href="iniciosesion.html" class="text-warning">¿Ya tienes una cuenta?</a>
+                        <a href="iniciosesion.php" class="text-warning">¿Ya tienes una cuenta?</a>
                     </div>
             </form>
         </div>
