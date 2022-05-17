@@ -18,9 +18,9 @@
                <form action="do_crearoferta.php" method="POST">
                     <!-- Formulario creación oferta -->
              
-                    <input type="text" class="w-50 m-1 form-control" name="titulo" placeholder="Introduce un título para la oferta..." required/>
+                    <input type="text" class="form-control" name="titulo" placeholder="Introduce un título para la oferta..." required/>
              
-                    <textarea type="text" class="w-50 m-1 form-control" name="descripcion" placeholder="Describe tu oferta..."></textarea>
+                    <textarea type="text" class="form-control" name="descripcion" placeholder="Describe tu oferta..."></textarea>
 
                     <input type="submit" class="btn btn-block ingresar" value="Crear oferta"> 
             </form>  
