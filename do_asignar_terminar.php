@@ -33,7 +33,7 @@
     <div class='col-auto'>
         <h2>La oferta ha sido cubierta con éxito</h2>
             <p>¿Que deseas hacer?</p>
-        <button onclick='window.location.href=ofertas_tec.php'>Cubrir más ofertas</button>
+        <script><button onclick='window.location.href='ofertas_tec.php''>Cubrir más ofertas</button><script>
         <button onclick='window.location.href=index.php'>Vovler a inicio</button>
     </div>
 </div>
