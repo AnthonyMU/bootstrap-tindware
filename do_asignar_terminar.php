@@ -28,7 +28,7 @@
         mysqli_query($con, $query);
         $query = "UPDATE tindware.ofertas SET id_usuariotec = $id_user WHERE id = $oferta_id;";
         mysqli_query($con, $query);
-        echo "<div class='container'>
+        echo "<div class='container lead'>
                 <div class='row justify-content-center'>
                     <div class='col-auto'>
                         <a href='ofertas_tec.php'>Oferta asignanda con exito</a>
@@ -40,7 +40,7 @@
         # Vamos a dar por finalizada la oferta
         $query = "UPDATE tindware.ofertas SET fechafinalizacion = CURRENT_TIMESTAMP() WHERE id = $oferta_id;";
         mysqli_query($con, $query);
-        echo "<div class='container'>
+        echo "<div class='container lead'>
         <div class='row justify-content-center'>
             <div class='col-auto'>
                 <a href='ofertas_tec.php'>Has cubierto la oferta de manera satisfactoria</a>
@@ -49,7 +49,7 @@
     </div>";
     }
     else {
-        echo "<div class='container'>
+        echo "<div class='container lead'>
         <div class='row justify-content-center'>
             <div class='col-auto'>
                 <a href='ofertas_tec.php'>¡Vaya! Se ha producido un error inesperado</a>
