@@ -42,9 +42,12 @@
     }
 
     mysqli_close($con);
-    include 'inc/footer.php';
+  
 ?>
-
     </div>
 </div>
 
+<?php
+    include 'inc/footer.php';
+?>
+  
