@@ -14,13 +14,13 @@
     ?>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-auto text-center w-100">
-               <form action="do_crearoferta.php" method="POST" class="mt-5 mb-5">
+            <div class="col-auto text-center w-100 mt-5 mb-5">
+               <form action="do_crearoferta.php" method="POST">
                     <!-- Formulario creación oferta -->
              
-                    <input type="text" class="w-50" name="titulo" placeholer="Introduce un título para la oferta..." required/>
+                    <input type="text" class="w-50 m-1" name="titulo" placeholder="Introduce un título para la oferta..." required/>
              
-                    <textarea type="text" name="descripcion"  class="w-50" placeholder="Describe tu oferta..."></textarea>
+                    <textarea type="text" name="descripcion"  class="w-50 m-1" placeholder="Describe tu oferta..."></textarea>
 
                     <input type="submit" class="btn btn-block ingresar" value="Crear oferta"> 
             </form>  
