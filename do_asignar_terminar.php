@@ -32,9 +32,9 @@
         <div class='row justify-content-center'>
     <div class='col-auto'>
         <h2>La oferta ha sido cubierta con éxito</h2>
-            <p></p>
-        <button onclick='window.location.href='ofertas_tec.php''>Cubrir más ofertas</button>
-        <button onclick='window.location.href='index.php''>Vovler a inicio</button>
+            <p>¿Que deseas hacer?</p>
+        <button onclick='window.location.href=ofertas_tec.php'>Cubrir más ofertas</button>
+        <button onclick='window.location.href=index.php'>Vovler a inicio</button>
     </div>
 </div>
     </div>";
