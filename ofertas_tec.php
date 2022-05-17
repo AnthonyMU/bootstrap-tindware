@@ -97,12 +97,14 @@
                 <div id="menuBotones" class="col-md">
                     <h1 class="lead text-white">Seleccione filtro</h1>
                         <table>
-                            <tr><td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td></tr>
-                            <tr><td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td></tr>
-                            <tr><td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td></tr>
+                            <tr>
+                            <td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td>
+                            <td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td>
+                            <td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td>
+                            </tr>
                         </table>
                 </div>
-              <div id="ofertas" class="lead col-md">
+              <div id="ofertas" class="container lead col-md">
             <div class="container ensenarOferta" id="ofertasPendientes">
                 <?php
                 if ($pendientesVacio) {
