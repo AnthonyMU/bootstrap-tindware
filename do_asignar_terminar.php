@@ -8,10 +8,9 @@
 </body>
 </html>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-auto">
 <?php
+
+
     # Cargar constantes
     include 'inc/constantes.php';
     # Cargamos cookies
@@ -42,12 +41,5 @@
     }
 
     mysqli_close($con);
-  
-?>
-    </div>
-</div>
-
-<?php
     include 'inc/footer.php';
 ?>
-  
