@@ -14,7 +14,7 @@
     ?>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col">
+            <div class="col-auto text-center">
                <form action="do_crearoferta.php" method="POST">
                     <!-- Formulario creación oferta -->
                 <h3>Titulo</h3>
