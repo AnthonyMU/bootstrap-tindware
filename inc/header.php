@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/header.css">
     <link rel="stylesheet" type="text/css" href="estilos/faq.css">
     <link rel="stylesheet" type="text/css" href="estilos/do_login-logout.css">
-    <link rel="stylesheet" type="text/css" href="estilos/oferta.css">
+    <link rel="stylesheet" type="text/css" href="estilos/viewoferta.css">
 
 </head>
 <body class="d-flex flex-column min-vh-100">
