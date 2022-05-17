@@ -13,7 +13,7 @@
     include 'inc/header.php';
     ?>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col">
                <form action="do_crearoferta.php" method="POST">
                     <!-- Formulario creación oferta -->
