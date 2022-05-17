@@ -78,9 +78,9 @@
         echo HIDE;
     }
     ?>
-    <div class="container">
+    <div class="container text-white lead">
         <div class="row justify-content-center">
-            <div class="col-auto">
+            <div class="col-auto voferta">
             <h1><?php echo $titulo ?></h1>
         <p><?php echo $descripcion?></p>
         <p>Oferta creada por: <?php echo $username_usuariopart ?> el <?php $fechaCr = explode(' ', $fechacreacion); echo $fechaCr[0]." a las ".$fechaCr[1] ?></p>
