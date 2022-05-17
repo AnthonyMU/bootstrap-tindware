@@ -52,7 +52,7 @@
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
                         <input type="text" class="form-control" id="geocoding_input" placeholder="Escriba su dirección..."/> 
-                        <button type="button" onclick="coordenadasDesdeGeocoding();">Asignar coordenadas</button><br/>
+                        <button type="button" class="cc" onclick="coordenadasDesdeGeocoding();">Asignar coordenadas</button><br/>
                         Latitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/></br>
                         Longitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/>
                     <div class="form-group mx-sm-4 pb-3">
