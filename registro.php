@@ -53,8 +53,8 @@
                     <div class="form-group mx-sm-4 pb-3">
                         <input type="text" class="form-control" id="geocoding_input" placeholder="Escriba su dirección..."/> 
                         <button type="button" onclick="coordenadasDesdeGeocoding();">Asignar coordenadas</button><br/>
-                        <input>Latitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/></input> 
-                        <input>Longitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/></input>
+                        Latitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/>
+                        Longitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/>
                     <div class="form-group mx-sm-4 pb-3">
                         <input type="submit" class="btn btn-block ingresar" value="Registrarse">
                     </div>
@@ -82,13 +82,11 @@ if ($id_user == 0) {
     echo HIDECLOSE;
 }
 
-
 include 'inc/footer.php';
+
 ?>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
