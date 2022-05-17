@@ -80,6 +80,17 @@ body{
 
 .cc{
     display: block;
-    text-align: center;
+    margin:auto;
+    margin-top:1em;
+    color: white;
+    background: black;
+}
+
+.cc:hover{
+    color: yellow;
     
+}
+
+.cc:active{
+    color: yellow;
 }

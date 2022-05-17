@@ -40,14 +40,14 @@
                         <input name="email" type="email" class="form-control" placeholder="Correo electrónico" required>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <h5 style="text-align: center;">Tipo de usuario</h5>
+                        
                         <select class="form-control" name="tipo" required>
                             <option value="particular" class="select">Particular</option>
                             <option value="tecnico" class="select">Tecnico</option>
                         </select>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
-                        <h5 style="text-align: center;">Fecha de nacimiento</h5>
+                        
                         <input name="fechanac" type="date" class="form-control" placeholder="Fecha de nacimiento" required>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
