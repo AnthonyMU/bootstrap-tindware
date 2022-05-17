@@ -28,18 +28,28 @@
         mysqli_query($con, $query);
         $query = "UPDATE tindware.ofertas SET id_usuariotec = $id_user WHERE id = $oferta_id;";
         mysqli_query($con, $query);
-        echo "<div class='container text-white text-align'>
-            <a href='ofertas_tec.php' class='xd'>Oferta asignada con éxito</a>
-        </div>";
+        echo "<div class='row justify-content-center'>
+                <div class='col-auto'>
+                 <a href='ofertas_tec.php'>Oferta asignanda con exito</a>
+                </div>
+            </div>";
     }
     elseif ($accion == 'terminar') { 
         # Vamos a dar por finalizada la oferta
         $query = "UPDATE tindware.ofertas SET fechafinalizacion = CURRENT_TIMESTAMP() WHERE id = $oferta_id;";
         mysqli_query($con, $query);
-        echo "<a href='ofertas_tec.php' class='xd'>Has cubierto el servicio técnico de forma satisfactoria</a>";
+        echo "<div class='row justify-content-center'>
+        <div class='col-auto'>
+         <a href='ofertas_tec.php'>Has cubierto el servicio técnico de forma satisfactoria</a>
+        </div>
+    </div>";
     }
     else {
-        echo "<a href='ofertas_tec.php' class='xd'>Error desconocido</a>";
+        echo "<div class='row justify-content-center'>
+        <div class='col-auto'>
+         <a href='ofertas_tec.php'>Error desconocido</a>
+        </div>
+    </div>";
     }
 
     mysqli_close($con);
