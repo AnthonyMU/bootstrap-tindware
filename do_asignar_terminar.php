@@ -29,15 +29,12 @@
         $query = "UPDATE tindware.ofertas SET id_usuariotec = $id_user WHERE id = $oferta_id;";
         mysqli_query($con, $query);
         echo "<div class='container lead'>
-        <div class='row justify-content-center'>
-    <div class='col-auto'>
-        <h2>La oferta ha sido cubierta con éxito</h2>
-            <p>¿Que deseas hacer?</p>
-        <script><button onclick='window.location.href='ofertas_tec.php''>Cubrir más ofertas</button><script>
-        <button onclick='window.location.href=index.php'>Vovler a inicio</button>
-    </div>
-</div>
-    </div>";
+                <div class='row justify-content-center'>
+                    <div class='col-auto'>
+                        <a href='ofertas_tec.php'>Oferta asignanda con exito</a>
+                    </div>
+                </div>
+            </div>";
     }
     elseif ($accion == 'terminar') { 
         # Vamos a dar por finalizada la oferta
