@@ -78,19 +78,9 @@ body{
     background: rgba(0, 0, 0,1);
 }
 
-.cc{
-    display: block;
-    margin:auto;
-    margin-top:1em;
-    color: white;
-    background: black;
+.coferta input{
+    margin-top:10px;
 }
-
-.cc:hover{
-    color: yellow;
-    
-}
-
-.cc:active{
-    color: yellow;
+.coferta textarea{
+    margin-top:10px;
 }
