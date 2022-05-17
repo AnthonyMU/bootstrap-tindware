@@ -100,3 +100,22 @@ body{
     color: yellow;
     background: rgba(0, 0, 0,1);
 }
+.voferta{
+    margin: 5em;
+    background: rgba(0, 1, 39, 0.9); 
+   
+}
+.voferta:hover{
+    text-align: justify;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    transition: 0.3s;
+    
+}
+.voferta h1{
+    text-align:center;
+    text-decoration: underline;
+}
+.voferta p{
+    text-align: justify;
+    font-wight:bold;
+}

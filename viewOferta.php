@@ -90,7 +90,7 @@
         if (!$asignadoFlag) {
             echo HIDE;
         }?>
-        <p>Oferta asignada a: <?php echo $username_usuariotec ?> el <?php $fechaAs = explode(' ', $fechaasignado); echo $fechaAs[0]." a las ".$fechaAs[1] ?></p>
+        <p class="text-warning">Oferta asignada a: <?php echo $username_usuariotec ?> el <?php $fechaAs = explode(' ', $fechaasignado); echo $fechaAs[0]." a las ".$fechaAs[1] ?></p>
             <?php
             if (!$finalizadoFlag) {
                 echo HIDE;
