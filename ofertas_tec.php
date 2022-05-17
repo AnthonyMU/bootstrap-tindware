@@ -94,7 +94,7 @@
         }?>
         <div class="container">
             <div class="row">
-                <div id="menuBotones" class="col-md">
+                <div id="menuBotones" class="col">
                     <h1 class="lead text-white">Seleccione filtro</h1>
                         <table>
                             <tr>
@@ -104,7 +104,7 @@
                             </tr>
                         </table>
                 </div>
-              <div id="ofertas" class="container lead col-md">
+              <div id="ofertas" class="container lead">
             <div class="container ensenarOferta" id="ofertasPendientes">
                 <?php
                 if ($pendientesVacio) {
