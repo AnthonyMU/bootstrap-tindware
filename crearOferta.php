@@ -12,7 +12,7 @@
     # Incluir header
     include 'inc/header.php';
     ?>
-    <div class="container">
+    <div class="container coferta">
         <div class="row justify-content-center">
             <div class="col-auto text-center w-100 mt-5 mb-5">
                <form action="do_crearoferta.php" method="POST">
