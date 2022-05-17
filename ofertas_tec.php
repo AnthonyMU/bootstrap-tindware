@@ -103,7 +103,7 @@
                         </table>
                 </div>
               <div id="ofertas" class="lead col-md">
-            <div class="ensenarOferta" id="ofertasPendientes">
+            <div class="container ensenarOferta" id="ofertasPendientes">
                 <?php
                 if ($pendientesVacio) {
                     echo HIDE;
@@ -125,7 +125,7 @@
                 }?>
             </div>
 
-            <div class="ensenarOferta" id="ofertasDisponibles">
+            <div class="container ensenarOferta" id="ofertasDisponibles">
                 <?php
                 if ($disponiblesVacio) {
                     echo HIDE;
@@ -147,7 +147,7 @@
                 }?>
             </div>
 
-            <div class="ensenarOferta" id="ofertasTerminadas">
+            <div class="container ensenarOferta" id="ofertasTerminadas">
                 <?php
                 if ($terminadasVacio) {
                     echo HIDE;
