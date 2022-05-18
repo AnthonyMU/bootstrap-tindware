@@ -72,7 +72,7 @@
                     }
                     echo "<div class='lead p-3 oferta'>
                     <div class='row justify-content-center'>
-                    <div class='col-auto'>
+                    <div class='col-auto-12'>
                     <div class='card ml-5 text-center bg-transparent border-0 col-md-12'>
                     <div class='card-body cards'>";
                     echo "<h5 class='card-title tituloOferta'>$titulo</h5>";
