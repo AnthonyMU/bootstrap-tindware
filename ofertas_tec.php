@@ -70,10 +70,13 @@
                     else {
                         $miOnclick = "location.href='do_asignar_terminar.php?id=$id_oferta&accion=terminar';";
                     }
-                    echo "<div class='container-fluid lead p-3 oferta'><div class='row'><div class='col-md-6 col-sm-6'><div class='card ml-5 text-center bg-transparent border-0 col-md-6'>
+                    echo "<div class='lead p-3 oferta'>
+                    <div class='row'>
+                    <div class='col-md-6 col-sm-6'>
+                    <div class='card ml-5 text-center bg-transparent border-0 col-md-6'>
                     <div class='card-body cards'>";
-                    echo "<h5 class='tituloOferta'>$titulo</h5>";
-                    echo "$descripcion<br/>";
+                    echo "<h5 class='card-title tituloOferta'>$titulo</h5>";
+                    echo "<p class='card-text'>$descripcion</p><br/>";
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
                     echo "<input type='button' onclick=$miOnclick";
                     #if (!$clickable) {echo " disbaled";}
