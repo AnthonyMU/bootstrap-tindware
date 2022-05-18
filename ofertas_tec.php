@@ -70,8 +70,8 @@
                     else {
                         $miOnclick = "location.href='do_asignar_terminar.php?id=$id_oferta&accion=terminar';";
                     }
-                    echo "<div class='container-fluid lead p-3 oferta'><div class='row text-center'>";
-                    echo "<span class='tituloOferta'>$titulo</span><br/>";
+                    echo "<div class='container-fluid lead p-3 oferta'><div class='row text-center'><div class='col'><div class='box'>";
+                    echo "<h4 class='tituloOferta'>$titulo</h4>";
                     echo "$descripcion<br/>";
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
                     echo "<input type='button' onclick=$miOnclick";
@@ -86,7 +86,7 @@
                     if (!$clickable) { echo " disabled"; }
                     echo "></input>";
                     echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
-                    echo "</div></div>";
+                    echo "</div></div></div></div>";
                 }
             }
 
