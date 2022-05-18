@@ -70,7 +70,7 @@
                     else {
                         $miOnclick = "location.href='do_asignar_terminar.php?id=$id_oferta&accion=terminar';";
                     }
-                    echo "<div class='container-fluid lead p-3 oferta'><div class='row text-center'><div class='col'><div class='box'>";
+                    echo "<div class='container-fluid lead p-3 oferta'><div class='row'><div class='col-md-6 col-sm-6'><div class='card ml-5 text-center bg-transparent border-0 col-md-6'>";
                     echo "<h4 class='tituloOferta'>$titulo</h4>";
                     echo "$descripcion<br/>";
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
