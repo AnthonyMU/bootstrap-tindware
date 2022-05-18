@@ -1,11 +1,3 @@
-/* #main {
-    float 
-} */
-body{
-    font-family: arial;
- 
-}
-
 #menuBotones h1 {
     text-align: center;
     
@@ -52,51 +44,8 @@ body{
     clear: both;
 }
 
-.ensenarOferta {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(200px, auto);
-    padding-top: 10px; 
 
-}
-
-.oferta {
-    position: relative;
-    border: #053041 3px solid;
-    border-left: #053041 5px solid;
-    border-bottom: #053041 9px solid;
-    margin: 1%;
-    padding: 8px;
-    background:  #AEC6CF;
-}
-input{
-    margin-top: 10px;
-    padding: 5px;
-    width: 100%;
-}
-input{
+.cards{
+    background: rgba(0, 1, 39, 0.9);
     color: white;
-    background: black;
-    border: none;
-    border: 1px solid #00c2ae;
-}
-input:hover{
-    background: #c2c2c2;
-    transition: 0.1s;
-}
-.oferta:hover{
-
-    transition-duration: 0.5s;
-}
-
-.tituloOferta {
-    font-size: 16pt;
-    font-weight: bold;
-}
-
-.ubicacion {
-    position: absolute;
-    bottom: 8px; /*lo mismo que padding de .oferta*/
-    left: 8px; /*lo mismo que padding de .oferta*/
 }
