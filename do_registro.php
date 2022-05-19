@@ -103,7 +103,7 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_success" class="container ebienvenido">
+    <div id="doregistro_success" class="container ebienvenido lead text-white">
         <div class="row justify-content-center">
             <div class="col-auto">
                 <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
@@ -124,7 +124,7 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_error" class="container ebienvenido">
+    <div id="doregistro_error" class="container ebienvenido lead text-white">
         <div class="row justify-content-center">
             <div class="col-auto">
             <p> Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a></p>
