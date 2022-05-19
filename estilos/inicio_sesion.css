@@ -71,7 +71,7 @@ body{
     width: 10%;
     height: 10%;
     text-align: center;
-    color: wheat;
+    color: white;
  
 }
 .select{
@@ -113,9 +113,12 @@ body{
 }
 .voferta h1{
     text-align:center;
-    text-decoration: underline;
+    font-size:30px; 
 }
 .voferta p{
     text-align: justify;
     font-wight:bold;
+    font-size:15px;
+    font-weight:bold;
+    color: #ffc107;
 }
