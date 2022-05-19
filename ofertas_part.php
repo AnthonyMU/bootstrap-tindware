@@ -98,17 +98,21 @@
 
 
         }?>
-        <div id="menuBotones">
-            <h1>Seleccione filtro</h1>
-            <table>
-                <tr><td><a class="botonOfertas" class="crearOferta" href="crearOferta.php">Crea una nueva incidencia</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botoNuevas" href="#" onclick="showNuevas();">Incidencias sin asignar</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonEnProceso" href="#" onclick="showEnProceso();">Incidencias en proceso</a></td></tr>
-                <tr><td><a class="botonOfertas" id="botonHistorial" href="#" onclick="showTerminadas();">Historial de incidencias</a></td></tr>
-            </table>
-        </div>
-        <div id="ofertas">
-            <div class="ensenarOferta" id="ofertasNuevas">
+        <div class="container lead">
+            <div class="row">
+                <div id="menuBotones" class="col">
+                    <h1 class="lead text-white text-center">Seleccione filtro</h1>
+                        <table>
+                            <tr>
+                            <td><a class="botonOfertas" class="crearOferta" href="crearOferta.php">Crea una nueva incidencia</a></td>
+                            <td><a class="botonOfertas" id="botoNuevas" href="#" onclick="showNuevas();">Incidencias sin asignar</a></td>
+                            <td><a class="botonOfertas" id="botonEnProceso" href="#" onclick="showEnProceso();">Incidencias en proceso</a></td>
+                            <td><a class="botonOfertas" id="botonHistorial" href="#" onclick="showTerminadas();">Historial de incidencias</a></td>
+                            </tr>
+                        </table>
+                </div>
+                <div id="ofertas" class="container lead">
+            <div class="container ensenarOferta" id="ofertasNuevas">
                 <?php
                 if ($nuevasVacio) {
                     echo HIDE;
@@ -130,7 +134,7 @@
                 }?>
             </div>
 
-            <div class="ensenarOferta" id="ofertasEnProceso">
+            <div class="container ensenarOferta" id="ofertasEnProceso">
                 <?php
                 if ($enProcesoVacio) {
                     echo HIDE;
@@ -152,7 +156,7 @@
                 }?>
             </div>
 
-            <div class="ensenarOferta" id="ofertasTerminadas">
+            <div class="container ensenarOferta" id="ofertasTerminadas">
                 <?php
                 if ($terminadasVacio) {
                     echo HIDE;
@@ -172,8 +176,16 @@
                 if (!$terminadasVacio) {
                     echo HIDECLOSE;
                 }?>
+             </div>
+        </div>    
             </div>
         </div>
+
+
+
+
+
+
     <?php
     if (!$permitido) {
         echo HIDECLOSE;
