@@ -30,7 +30,7 @@
         mysqli_query($con, $query);
         echo "<div class='container lead aoferta'>
                 <div class='row justify-content-center'>
-                    <div class='col-auto'>
+                    <div class='col-auto easignada'>
                         <a href='ofertas_tec.php'>Oferta asignanda con exito</a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
         mysqli_query($con, $query);
         echo "<div class='container lead aoferta'>
         <div class='row justify-content-center'>
-            <div class='col-auto'>
+            <div class='col-auto easignada'>
                 <a href='ofertas_tec.php'>Has cubierto la oferta de manera satisfactoria</a>
             </div>
         </div>
@@ -51,7 +51,7 @@
     else {
         echo "<div class='container lead aoferta'>
         <div class='row justify-content-center'>
-            <div class='col-auto'>
+            <div class='col-auto easignada'>
                 <a href='ofertas_tec.php'>¡Vaya! Se ha producido un error inesperado</a>
             </div>
         </div>
