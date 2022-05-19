@@ -103,7 +103,7 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_success" class="container ebinevenido">
+    <div id="doregistro_success" class="container ebienvenido">
         <div class="row justify-content-center">
             <div class="col-auto">
                 <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
