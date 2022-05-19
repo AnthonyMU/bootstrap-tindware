@@ -89,7 +89,7 @@
                     }
                     if (!$clickable) { echo " disabled"; }
                     echo "></input>";
-                    echo "<span class='ubicacion'><img src='img/ubi.png'/> $lat, $lon</span>";
+                    echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
                     echo "</div></div></div></div></div>";
                 }
             }
