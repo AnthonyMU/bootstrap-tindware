@@ -70,9 +70,13 @@
                     else {
                         $miOnclick = "location.href='do_asignar_terminar.php?id=$id_oferta&accion=terminar';";
                     }
-                    echo "<div class='oferta'>";
-                    echo "<span class='tituloOferta'>$titulo</span><br/>";
-                    echo "$descripcion<br/>";
+                    echo "<div class='lead p-3 oferta'>
+                    <div class='row justify-content-center'>
+                    <div class='col-auto-12'>
+                    <div class='card ml-5 text-center bg-transparent border-0 col-md-12'>
+                    <div class='card-body cards'>";
+                    echo "<h5 class='card-title tituloOferta'>$titulo</h5>";
+                    echo "<p class='card-text'>$descripcion</p><br/>";
                     if ($tipo = 'disponible') {
                         echo "<span class='iroferta'><a href='viewOferta.php?id=$id_oferta'>Ver más</a></span><br/>";
                     }
@@ -88,7 +92,7 @@
                     if (!$clickable) { echo " disabled"; }
                     echo "</input>";
                     echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
-                    echo "</div>";
+                    echo "</div></div></div></div></div>";
                 }
             }
 
