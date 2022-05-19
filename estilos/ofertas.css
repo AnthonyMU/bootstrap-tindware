@@ -1,49 +1,31 @@
-#menuBotones h1 {
-    text-align: center;
-    
+#menuBotones table{
+    margin:auto;
 }
-
-#menuBotones table {
-    border-spacing: 12px;
-    margin: auto;
+#menuBotones h1{
+    font-size: 30px;
+    margin-top: 15px;
+    font-weight:bold;
 }
-
-#menuBotones td {
-    background-color: #053041;
-    margin-bottom: 1000px;
-    border-radius: 3px;
-}
-#menuBotones td:hover{
-    background: #0069f8;
-}
-
-#ofertas a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    
-
-  
-}
-#ofertas a:hover{
-    color: #0069f8;
-}
-
 .botonOfertas {
     color: white;
     text-decoration: none;
-    text-align: center;
     display: inline-block;
-    padding: 10px 15px;
+    margin: 15px 15px;
+    font-weight:bold;
+    font-size:18px;
+}
+.botonOfertas{
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
 }
 
-
-#oferas:after {
-    content: "";
-    display: table;
-    clear: both;
+#menuBotones a:hover{
+    color:white;
 }
-
 
 .cards{
     background: rgba(0, 1, 39, 0.9);

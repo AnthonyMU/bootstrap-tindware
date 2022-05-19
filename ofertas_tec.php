@@ -104,7 +104,7 @@
                             <tr>
                             <td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td>
                             <td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Incidencias disponibles</a></td>
-                            <td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historia de incidencias</a></td>
+                            <td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Historial de incidencias</a></td>
                             </tr>
                         </table>
                 </div>
