@@ -6,7 +6,7 @@
     font-weight: bold;
 }
 .volver:hover{
-    color:blue;
+    color:#ffc107;
     
 }
 h6{
@@ -34,3 +34,13 @@ h6{
     margin-top: 5em;
     margin-bottom:5em;
 }
+.avisita a{
+    text-decoration:none;
+    color: yellow;
+}
+.avisita a:hover{
+   color: #ffc107;
+    transition:0.3s;
+}
+
+
