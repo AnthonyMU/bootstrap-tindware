@@ -103,6 +103,8 @@ body{
 .voferta{
     margin: 5em;
     background: rgba(0, 1, 39, 0.9); 
+    padding:15px 15px;
+    border-radius:5px;
    
 }
 .voferta:hover{
