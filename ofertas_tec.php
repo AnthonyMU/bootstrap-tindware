@@ -78,7 +78,7 @@
                     echo "<h5 class='card-title tituloOferta'>$titulo</h5>";
                     echo "<p class='card-text'>$descripcion</p><br/>";
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
-                    echo "<input type='button' onclick=$miOnclick";
+                    echo "<input type='button' class='binput' onclick=$miOnclick";
                     #if (!$clickable) {echo " disbaled";}
                     #if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
                     if ($tipo == 'disponible') {
@@ -182,7 +182,7 @@
 
 
 
-        
+
     <?php
     if (!$permitido) {
         echo HIDECLOSE;
