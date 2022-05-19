@@ -99,7 +99,7 @@
         <div class="container lead">
             <div class="row">
                 <div id="menuBotones" class="col">
-                    <h1 class="lead text-white">Seleccione filtro</h1>
+                    <h1 class="lead text-white text-center">Seleccione filtro</h1>
                         <table>
                             <tr>
                             <td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Incidencias pendientes</a></td>

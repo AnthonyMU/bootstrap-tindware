@@ -16,7 +16,7 @@
 }
 .botonOfertas{
     text-decoration: none;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background-image: linear-gradient(#ffc107, #ffc107);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -24,7 +24,7 @@
 }
 
 #menuBotones a:hover{
-    color:white;
+    color: #ffc107;
 }
 
 .cards{
