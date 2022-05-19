@@ -179,6 +179,10 @@
         </div>
         
       
+
+
+
+        
     <?php
     if (!$permitido) {
         echo HIDECLOSE;
