@@ -124,8 +124,13 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_error" class="error">
-        <p> Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a></p>
+    <div id="doregistro_error" class="container ebienvenido">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+            <p> Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a></p>
+            </div>
+        </div>
+       
     </div>
     <?php
     # Si el registro es correcto escondemos el div de error
