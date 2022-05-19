@@ -42,5 +42,20 @@ h6{
    color: #ffc107;
     transition:0.3s;
 }
+.ebienvenido a{
+    text-decoration:none;;
+    color: white;
+    text-align:center;
 
+    font-size:19px;
+}
+.ebienvenido a:hover{
+    color: #ffc107;
+    transition:0.3s;
+}
+
+
+.ebienvenido p{
+    font-weight:bold;
+}
 

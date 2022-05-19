@@ -103,9 +103,13 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_success">
-        <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
-        <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</p>
+    <div id="doregistro_success" class="container ebinevenido">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
+                <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</p> 
+            </div>
+        </div>
     </div>
     <?php
     # Si el registro ha fallado escondemos el div de success
