@@ -79,6 +79,7 @@
                     echo "<p class='card-text'>$descripcion</p><br/>";
                     if ($tipo = 'disponible') {
                         echo "<span class='iroferta'><a href='viewOferta.php?id=$id_oferta'>Ver más</a></span><br/>";
+                        echo "<input type='button' class='binput' onclick='location.href='viewOferta.php?id=$id_oferta'>Ver más</input>'";
                     }
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
                     #if (!$clickable) {echo " disbaled";}
