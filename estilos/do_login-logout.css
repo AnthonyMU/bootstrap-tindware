@@ -56,5 +56,18 @@ h6{
 .ebienvenido p{
     font-weight:bold;
 }
+.binput:hover{
+    background:#ffc107;
+    border: 1px solid yellow;
+    transition:0.3s;
+}
+.binput{
+    display:block;
+    margin:auto;
+    width:40%;
+    font-weight:bold;
+    font-size:18px; 
+    border:1px solid white;
+}
 
 

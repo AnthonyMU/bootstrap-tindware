@@ -78,7 +78,7 @@
                     echo "<h5 class='card-title tituloOferta'>$titulo</h5>";
                     echo "<p class='card-text'>$descripcion</p><br/>";
                     if ($tipo = 'disponible') {
-                        echo "<input type='button' class='binput' onclick=location.href='viewOferta.php?id=$id_oferta' value='ver mas'>";
+                        echo "<input type='button' class='binput' onclick=location.href='viewOferta.php?id=$id_oferta' value='Más información'>";
                     }
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
                     #if (!$clickable) {echo " disbaled";}

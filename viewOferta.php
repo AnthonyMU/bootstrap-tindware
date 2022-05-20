@@ -84,6 +84,7 @@
             <h1><?php echo $titulo ?></h1>
         <p><?php echo $descripcion?></p>
         <p>Oferta creada por: <?php echo $username_usuariopart ?> el <?php $fechaCr = explode(' ', $fechacreacion); echo $fechaCr[0]." a las ".$fechaCr[1] ?></p>
+        <input type="button" class="binput" onclick="location.href='ofertas_part.php'" value="Volver atrás">
         </div>
         </div>
    <?php     
