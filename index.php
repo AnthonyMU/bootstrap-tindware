@@ -32,7 +32,7 @@
                                     Iniciar sesión
                                 </button>
                                 <button id="button" class="btn btn-dark button" onclick="location.href='registro.php';" style="margin: 0">
-                                    ¡Regístrate ya!
+                                    ¡Únete!
                                 </button>
                             </div>
                             <?php
