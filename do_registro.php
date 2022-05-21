@@ -106,8 +106,8 @@
     <div id="doregistro_success" class="container lead text-white">
         <div class="row justify-content-center">
             <div class="col-auto mt-5">
-                <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
-                <input type="button" class="binput mt-5" onclick="location.href='index.php'" value="Inicio"></p> 
+                <p class="bienvenido">¡Bienvenido a TindWare, <?php echo @$username ?>!<br/>
+                <input type="button" class="binput2 mt-5" onclick="location.href='index.php'" value="Inicio"></p> 
             </div>
         </div>
     </div>

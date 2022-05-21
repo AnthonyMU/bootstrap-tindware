@@ -46,8 +46,6 @@ h6{
     text-decoration:none;;
     color: red;
     text-align:center;
-
-   
 }
 .ebienvenido a:hover{
     color: #ffc107;
@@ -57,16 +55,22 @@ h6{
     font-weight:bold;
 }
 .binput:hover{
-    background:#ffc107;
-    transition:0.3s;
+    background: rgba(0, 1, 39, 1);
+    border-color: #ffc107;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    color: #ffc107;
 }
 .binput{
+     background: rgba(0, 1, 39, 0.8);
     display:block;
-    margin:auto;
-    width:42%;
-    font-weight:bold;
-    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     border-radius: 3px;
+    font-size: 15px;
+    color:white;
+    border-color:white;
 }
 .binput2{
     background: rgba(0, 1, 39, 0.8);
