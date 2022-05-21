@@ -54,7 +54,6 @@ function obtenerOfertasCercanas(lat, lon) {
         dist = dist * 180/Math.PI
         dist = dist * 60 * 1.1515
         dist = dist * 1.609344 // km
-        dist = parseFloat(dist.toFixed(2))
         console.log("Distancia calculada: " + dist + "con lat: " + lat + " lon: " + lon);
         return dist
     }
@@ -79,11 +78,12 @@ function obtenerOfertasCercanas(lat, lon) {
 
             $("#resultados").empty();
             for (i = 0; i < ofertas.length; i++) {
+                var distanciaDosDec = ofertas[i]["distance"].toFixed(2);
                 var idOfertaHTML = "oferta" + i.toString();
                 $("#resultados").append($("<div>").attr("id", idOfertaHTML))
                 $("#" + idOfertaHTML).append($("<a>").attr("href", "viewOferta.php?id=" + ofertas[i]["id"])).append($("<h3>").text(ofertas[i]["titulo"]));
                 $("#" + idOfertaHTML).append($("<p>").text(ofertas[i]["descripcion"]))
-                $("#" + idOfertaHTML).append($("<p>").text("Distancia: " + ofertas[i]["distance"] + " km"))
+                $("#" + idOfertaHTML).append($("<p>").text("Distancia: " + distanciaDosDec + " km"))
                 $("#" + idOfertaHTML).append($("<p>").text("Usuario: " + ofertas[i]["username"]))
             }
         }
