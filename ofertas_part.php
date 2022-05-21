@@ -89,7 +89,7 @@
                     else {
                         echo " value='Terminar'";
                     }
-                    if (!$clickable) { echo " disabled"; }
+                    #if (!$clickable) { echo " disabled"; }
                     echo "</input>";
                     echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
                     echo "</div></div></div></div></div>";
