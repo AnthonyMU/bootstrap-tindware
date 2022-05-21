@@ -120,7 +120,7 @@
                     }
                     ?>
                     <li class="nav-item">
-                        <span class="text-white">Bienvenido <?php echo @$datosUser['username'] ?>.</span>
+                        <span class="nav-link text-white">Bienvenido <?php echo @$datosUser['username'] ?>.</span>
                     </li>
                     <li class="nav-item">
                         <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
