@@ -7,17 +7,17 @@
     background: none;
     box-shadow: none;
     outline: none;
-    color: yellow;
+    color: #ffc107;
 }
 .faq:hover{
-    color: yellow;
+    color: #ffc107;
 }
 .alinear{
     text-align: center;
     display: block;
 }
 .rev{
-    color: yellow;
+    color: #ffc107;
     font-size: bold;
 }
 

@@ -39,7 +39,7 @@ h6{
     color: yellow;
 }
 .avisita a:hover{
-   color: #ffc107;
+    color: #ffc107;
     transition:0.3s;
 }
 .ebienvenido a{
@@ -58,7 +58,6 @@ h6{
 }
 .binput:hover{
     background:#ffc107;
-    border: 1px solid yellow;
     transition:0.3s;
 }
 .binput{
@@ -67,7 +66,6 @@ h6{
     width:40%;
     font-weight:bold;
     font-size:18px; 
-    border:1px solid white;
 }
 
 
