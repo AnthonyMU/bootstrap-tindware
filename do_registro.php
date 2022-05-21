@@ -103,11 +103,11 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_success" class="container ebienvenido lead text-white">
+    <div id="doregistro_success" class="container lead text-white">
         <div class="row justify-content-center">
-            <div class="col-auto">
+            <div class="col-auto mt-5">
                 <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
-                <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</p> 
+                <input type="button" class="binput mt-5" onclick="location.href='index.php'" value="Inicio"></p> 
             </div>
         </div>
     </div>
