@@ -100,17 +100,18 @@
                 echo HIDECLOSE;
             }
             ?>
+            <a href="ofertas_part.php">Volver atras</a>
         <?php
         if (!$asignadoFlag) {
             echo HIDECLOSE;
         }
         ?>
-    </div>
-    <?php
         <input type="button" class="binput2" onclick="location.href='ofertas_part.php'" value="Volver atrás">
         </div>
         </div>
-   
+ 
+    </div>
+    <?php
     if ($errorFlag) {
         echo HIDECLOSE;
     }
