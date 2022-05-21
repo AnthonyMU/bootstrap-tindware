@@ -30,6 +30,15 @@
         <div class="carousel-item">
           <img src="img/tercera.png" class="d-block imgg img-responsive" alt="...">
         </div>
+        <div class="carousel-item">
+          <img src="img/cuarta.png" class="d-block imgg img-responsive" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/quinta.png" class="d-block imgg img-responsive" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/sexta.png" class="d-block imgg img-responsive" alt="...">
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
