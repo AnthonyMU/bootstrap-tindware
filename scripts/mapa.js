@@ -67,7 +67,6 @@ function obtenerOfertasCercanas(lat, lon) {
 
             for ( i = 0; i < ofertas.length; i++) {
                 ofertas[i]["distance"] = calculateDistance(lat,lon,ofertas[i]["lat"],ofertas[i]["lon"]);
-                console.log(ofertas[i]["distance"]);
               }
 
             ofertas.sort(function(a, b){
@@ -107,7 +106,7 @@ async function updateGMaps(lat, lon, query) {
     obtenerOfertasCercanas(lat, lon);
 }
 
-async function getLocForm() {
+function getLocForm() {
     var texto = $("#inputMostrar").val();
     if (!texto) {
         alert("Form vacio");

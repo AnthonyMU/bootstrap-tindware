@@ -39,12 +39,64 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <a href="index.php" class="navbar-brand fs-1">TindWare</a>
                 <ul class="navbar-nav ms-auto lead">
+                    <?php
+                    if ($datosUser['tipo'] != "particular") {
+                        echo HIDE;
+                    }
+                    ?>
+                    <li class="nav-item">
+                        <a href="crearOferta.php" class="nav-link text-white">Crear incidencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ofertas_part.php" class="nav-link text-white">Mis incidencias</a>
+                    </li>
+                    <?php
+                    if ($datosUser['tipo'] != "particular") {
+                        echo HIDE;
+                    }
+                    ?>
+
+
+                    <?php
+                    if ($datosUser['tipo'] != "tecnico") {
+                        echo HIDE;
+                    }
+                    ?>
+                    <li class="nav-item">
+                        <a href="mapatecnicos.php" class="nav-link text-white">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ofertas_tec.php" class="nav-link text-white">Incidencias</a>
+                    </li>
+                    <?php
+                    if ($datosUser['tipo'] != "tecnico") {
+                        echo HIDE;
+                    }
+                    ?>
+
+                    <?php
+
+                    if ($datosUser['tipo'] != "admin") {
+                        echo HIDE;
+                    }
+                    ?>
+                    <li class="nav-item">
+                        <a href="admin.php" class="nav-link text-white">Panel admin</a>
+                    </li>
+                    <?php
+
+                    if ($datosUser['tipo'] != "admin") {
+                        echo HIDECLOSE;
+                    }
+                    ?>
+
                     <li class="nav-item">
                         <a href="qs.php" class="nav-link text-white">Quienes somos</a>
                     </li>
                     <li class="nav-item">
                         <a href="FAQ.php" class="nav-link text-white">FAQ</a>
                     </li>
+
                     <?php
                     # Si no es guest quitamos el boton de iniciar sesión o registro
                     if ($datosUser['tipo'] != "invitado") {
