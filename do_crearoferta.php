@@ -55,15 +55,15 @@
                 errorReg("
                 <div id='docrearoferta_error' class='container error text-white'>
     
-                <div class='row justify-content-center mt-4 mb-4'>
-                     <div class='col-auto'>
-                        <p>Error: Ya existe una oferta pendiente con estos datos DEBUG: ID OFERTA = $id_oferta</p>
-                        <p class='text-center'>¿Qué deseas hacer a continuación?</p>
-                         <input type='button' class='binput mt-4' onclick='location.href='crearOferta.php'' value='Nueva'>
-                         <input type='button' class='binput mt-4' onclick='location.href='index.php'' value='Inicio'>
+                    <div class='row justify-content-center mt-4 mb-4'>
+                        <div class='col-auto'>
+                            <p>Error: Ya existe una oferta pendiente con estos datos DEBUG: ID OFERTA = $id_oferta</p>
+                            <p class='text-center'>¿Qué deseas hacer a continuación?</p>
+                            <input type='button' class='binput mt-4' onclick='location.href=\"crearOferta.php\"' value='Nueva'>
+                            <input type='button' class='binput mt-4' onclick='location.href=\"index.php\"' value='Inicio'>
+                        </div>
                     </div>
-                </div>
-            </div>");
+                </div>");
             }
         }
         else {

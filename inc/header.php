@@ -81,7 +81,7 @@
                     }
                     ?>
                     <li class="nav-item">
-                        <a href="admin.php" class="nav-link text-white">Panel admin</a>
+                        <a href="admin.php" class="nav-link text-white" style="color: #c1252a;">Panel admin</a>
                     </li>
                     <?php
 
@@ -120,7 +120,7 @@
                     }
                     ?>
                     <li class="nav-item">
-                        <span class="nav-link text-white">Bienvenido <?php echo @$datosUser['username'] ?>.</span>
+                        <span class="nav-link text-white">Bienvenido <?php echo @$datosUser['username'] ?></span>
                     </li>
                     <li class="nav-item">
                         <a href="do_logout.php" class="nav-link text-white">Cerrar sesión</a>
