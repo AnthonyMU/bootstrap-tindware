@@ -22,7 +22,7 @@
       </div>
       <div class="carousel-inner container-fluid">
         <div class="carousel-item active">
-          <img src="img/10.jpg" class="d-block imgg img-responsive" alt="...">
+          <img src="img/hola.png" class="d-block imgg img-responsive" alt="...">
         </div>
         <div class="carousel-item">
           <img src="img/2.jpg" class="d-block imgg img-responsive" alt="...">
