@@ -35,9 +35,9 @@
                         <h3>SOBRE TINDWARE</h3>
                         <p>Empresa dedicada al mantenimiento informático y la creación de proyectos.</p>
                         <div class="social-links mt-3"> 
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="twitter.com/Tindware" class="twitter"><i class="bi bi-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
+                            <a href="https://instagram.com/tindwareoficial" class="instagram"><i class="bi bi-instagram"></i></a> 
                             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> 
                         </div>
                     </div>
