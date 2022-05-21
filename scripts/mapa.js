@@ -54,7 +54,9 @@ function obtenerOfertasCercanas(lat, lon) {
         dist = dist * 180/Math.PI
         dist = dist * 60 * 1.1515
         dist = dist * 1.609344 // km
-        return dist.toFixed(2)
+        dist = parseFloat(dist.toFixed(2))
+        console.log("Distancia calculada: " + dist + "con lat: " + lat + " lon: " + lon);
+        return dist
     }
     
     var xmlHttp = new XMLHttpRequest();
