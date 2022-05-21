@@ -28,19 +28,25 @@ h1,h3{
 }
 .card{
     background: rgba(0, 1, 39, 0.9);
-   
 }
 .card p{
     line-height: 30px;
     font-size: 18px;
 }
+.card{
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.card:hover{
+   transform: scale(1.1,1.1);
+   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+   border-color: #ffc107;
+}
 .foto-equipo{
     width: 50%;
 }
 #learn{
-    background: rgba(0, 1, 39, 0.9);
-}
-.tarjeta{
     background: rgba(0, 1, 39, 0.9);
 }
 .justificador{
@@ -52,17 +58,6 @@ h1,h3{
     font-size: 18px;
     font-weight: normal;
 }
-.card{
-    position: relative;
-    transition: 0.5s;
-    overflow: hidden;
-
-}
-.card:hover{
-   transform: scale(1.1,1.1);
-   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-}
-
 .hidden{
     display: none;
 }
