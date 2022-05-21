@@ -100,7 +100,6 @@
                 echo HIDECLOSE;
             }
             ?>
-            <a href="ofertas_part.php">Volver atras</a>
         <?php
         if (!$asignadoFlag) {
             echo HIDECLOSE;
