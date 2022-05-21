@@ -33,7 +33,7 @@
                 <span class="errorMaps" id="gmap_noseguro">Esta función solo funciona en sitios seguros (HTTPS).</span>
             </div>
         </div>
-        <div id="columna">
+        <div id="columna" style="overflow:scroll;">
             <span class="titulo_columna">Resultados de la busqueda</span><br/>
             <input type="text" id="inputMostrar" placeholder="Introduce tu lugar..."/>
             <button id="buttonMostrar">Mostrar</button>
