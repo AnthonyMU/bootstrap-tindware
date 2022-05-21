@@ -40,8 +40,8 @@
         if ($permitido) {
             $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
             
-            $queryOfertasNuevas = "SELECT * FROM tindware.ofertas WHERE id_usuariopart = $id_user AND fechafinalizacion IS NULL;";
-            $queryOfertasEnProceso = "SELECT * FROM tindware.ofertas WHERE id_usuariopart IS NULL;";
+            $queryOfertasNuevas = "SELECT * FROM tindware.ofertas WHERE id_usuariopart = $id_user AND id_usuariotec IS NULL;";
+            $queryOfertasEnProceso = "SELECT * FROM tindware.ofertas WHERE id_usuariopart IS = $id_user AND id_usuariotec IS NOT NULL and fechafinalizacion IS NULL;";
             $queryOfertasTerminadas = "SELECT * FROM tindware.ofertas WHERE id_usuariopart = $id_user AND fechafinalizacion IS NOT NULL;";
 
             $outNuevas = mysqli_query($con, $queryOfertasNuevas);
