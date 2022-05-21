@@ -80,7 +80,16 @@
             echo HIDE;
         }
         ?>
-        <div id="docrearoferta_success" class="container">
+        <div id="docrearoferta_success" class="container lead">
+        <div class="row justify-content-center mt-4 mb-4">
+            <div class="col-auto">
+                <p>Se ha creado su oferta satisfactoriamente, ¡pronto un técnico se pondrá en contacto con usted!</p>
+                    <p class="text-center">¿Qué deseas hacer a continuación?</p>
+                 <input type="button" class="binput mt-5" onclick="location.href='crearOferta.php'" value="Nueva">
+                 <input type="button" class="binput mt-5" onclick="location.href='viewOferta.php?id=$id_oferta'" value="Ver oferta">
+                <input type="button" class="binput mt-5" onclick="location.href='index.php'" value="Inicio">
+            </div>
+        </div>
             <h6>Se ha creado su oferta pulse <a href='<?php echo "viewOferta.php?id=$id_oferta";?>'>aqui</a> para visitarla</h6>
         </div>
         <?php
