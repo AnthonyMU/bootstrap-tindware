@@ -4,11 +4,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-   border-radius: 3px;
+    border-radius: 3px;
+    
 }
 .button:hover{
     background: rgba(0, 1, 39, 1);
     border-color: #ffc107;
+    letter-spacing: 5px;
 }
 .informacion{
     background: rgba(0, 1, 39, 0.9);
