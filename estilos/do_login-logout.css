@@ -82,6 +82,7 @@ h6{
     font-size: 18px;
     color:white;
     border-color: rgba(0, 1, 39, 0.8);
+    font-weight:bold;
 }
 .binput2:hover{
     background: rgba(0, 1, 39, 1);
