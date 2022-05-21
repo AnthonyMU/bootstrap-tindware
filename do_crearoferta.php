@@ -57,10 +57,12 @@
     
                     <div class='row justify-content-center mt-4 mb-4'>
                         <div class='col-auto'>
-                            <p>Error: Ya existe una oferta pendiente con estos datos DEBUG: ID OFERTA = $id_oferta</p>
-                            <p class='text-center'>¿Qué deseas hacer a continuación?</p>
-                            <input type='button' class='btn btn-block ingresar binput mt-4' onclick='location.href=\"crearOferta.php\"' value='Nueva'>
-                            <input type='button' class='btn btn-block ingresar binput mt-4' onclick='location.href=\"index.php\"' value='Inicio'>
+                            <div style='background: rgba(0, 0, 0,0.5); border: 1px solid #ffc107;'>
+                                <p>Error: Ya existe una oferta pendiente con estos datos DEBUG: ID OFERTA = $id_oferta</p>
+                                <p class='text-center'>¿Qué deseas hacer a continuación?</p>
+                            <div>
+                            <input type='button' class='btn btn-block ingresar mt-4' onclick='location.href=\"crearOferta.php\"' value='Nueva'>
+                            <input type='button' class='btn btn-block ingresar mt-4' onclick='location.href=\"index.php\"' value='Inicio'>
                         </div>
                     </div>
                 </div>");
