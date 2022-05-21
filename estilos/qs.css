@@ -19,3 +19,16 @@
     bottom: 0;
     left: 0;             /* posicionada en la esquina inferior derecha */ 
 }
+.aqs{
+    background:none;
+    color: #ffc107;
+    text-decoration:none;
+}
+.aqs:hover{
+    background:none;
+    color: #ffc107;
+    letter-spacing:1px;
+    transition:0.3s;
+
+}
+
