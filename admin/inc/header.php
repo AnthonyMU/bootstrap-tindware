@@ -9,9 +9,12 @@ $datosUser = obtenerDatosUser($id_user);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/misc.css" type="text/css"/>
-    <link rel="stylesheet" type="text/css" href="form.css">
-    <link rel="stylesheet" href="../css/header.css" type="text/css"/>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="form.css">stylelink rel="stylesheet" href="../css/header.css" type="text/css"/>
     <link rel="stylesheet" href="../pa.css" type="text/css"/>
 </head>
 <?php
