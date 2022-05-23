@@ -172,9 +172,7 @@
                     <!--Una clase para el texto-->
                     <p class="text-white">Jefe de Seguridad</p>
                       <!--La clase bi permite colocar iconos, en este caso twitter, instagram y linkedin-->
-                    <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
-                    <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
-                    <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
+                    <a href="https://github.com/9c23a5/"><i class="bi bi-github text-white mx-1"></i></a> 
                     </i></a>
                 </div>
             </div>
