@@ -22,13 +22,19 @@
       </div>
       <div class="carousel-inner container-fluid">
         <div class="carousel-item active">
-          <img src="img/10.jpg" class="d-block imgg img-responsive" alt="...">
+          <img src="img/primera.png" class="d-block imgg img-responsive" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/2.jpg" class="d-block imgg img-responsive" alt="...">
+          <img src="img/segunda.png" class="d-block imgg img-responsive" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/8.jpg" class="d-block imgg img-responsive" alt="...">
+          <img src="img/tercera.png" class="d-block imgg img-responsive" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/cuarta.png" class="d-block imgg img-responsive" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/quinta.png" class="d-block imgg img-responsive" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">

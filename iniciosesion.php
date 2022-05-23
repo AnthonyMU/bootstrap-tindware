@@ -22,9 +22,6 @@
             <form action="do_login.php" method="POST">
                 <div class="form-group text-center">
                     <h4 class="text-white">Inicio de sesión</h4>
-                    <div id="centrador">
-                        <img src="img/login.png" class="rounded-circle img">  
-                    </div>
                 </div>
                 <div class="form-group mx-sm-4 pb-3">
                     <input name="login" type="text" class="form-control" placeholder="Usuario o email">
