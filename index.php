@@ -21,7 +21,7 @@
                     <div class="text-center lead">
                         <div>
                             <h1>Bienvenido a TindWare</h1>
-                            <p class="lead my-5 fs-4">Bienvenido a TindWare, el servicio técnico 24/7, los 365 dias del año.</p>
+                            <p class="lead my-5 fs-4">Bienvenido a TindWare, el servicio TI al alcance de todos.</p>
                             <?php
                             if ($id_user != 0) {
                                 echo HIDE;
