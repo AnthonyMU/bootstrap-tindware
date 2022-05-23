@@ -81,7 +81,7 @@
                     }
                     ?>
                     <li class="nav-item">
-                        <a href="admin/" class="nav-link" style="color: #c1252a;">Panel admin</a>
+                        <a href="admin/" class="nav-link" style="color: #ff0000;">Panel admin</a>
                     </li>
                     <?php
 
