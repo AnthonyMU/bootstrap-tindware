@@ -14,7 +14,8 @@ $datosUser = obtenerDatosUser($id_user);
             display: none;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="form.css">stylelink rel="stylesheet" href="../css/header.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css"/>
     <link rel="stylesheet" href="../pa.css" type="text/css"/>
 </head>
 <?php
