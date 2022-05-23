@@ -164,7 +164,7 @@
                 <!-- texto centrado-->
                 <div class="card-body text-center">
                     <!--la imagen se ha colocado con formato circular y la clase de css <<foto-equipo>>-->
-                    <img src="img/materia-gris.png" class="rounded-circle foto-equipo">
+                    <img src="img/poro.png" class="rounded-circle foto-equipo">
                     <!-- Un padding top para separar el titulo de la imagen-->
                     <h3 class="card-title pt-2">
                         Asier Mejuto
