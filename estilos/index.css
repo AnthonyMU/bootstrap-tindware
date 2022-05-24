@@ -14,7 +14,16 @@
     transition: 0.4s;
     letter-spacing: 3px;
     color: #ffc107;
+   animation:pulsate 1s ease-in-out; 
 }
+
+@keyframes pulsate{
+    0%{
+        box-shadow:
+            0 0 20px #ffc107;
+    }
+}
+
 .informacion{
     background: rgba(0, 1, 39, 0.9);
 }
