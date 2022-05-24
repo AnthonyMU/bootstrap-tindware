@@ -10,13 +10,14 @@ body{
     padding: 20px;
     background: rgba(0, 1, 39, 0.5);
     margin-bottom: 5em;
+    border-radius:5px;
 }
 
 .formulario:hover{
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
-    transition: 0.5s;
+    animation: pulsate 1s ease-in-out;
  
 }
+
 
 .form-control{
     background: rgba(0, 0, 0,0.5);
@@ -58,6 +59,7 @@ body{
     transition: 0.5s;
     letter-spacing: 3px;
     color: #ffc107;
+    animation: pulsate 1s ease-in-out;
 }
 #centrador{
     padding: 1%;
