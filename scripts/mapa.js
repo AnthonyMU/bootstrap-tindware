@@ -18,7 +18,7 @@ async function obtenerLatLon() {
     });
 }
 
-async function coordenadasDesdeGeocoding(query) {
+function coordenadasDesdeGeocoding(query) {
     var apikey = "2a6ef58c88ad4fd9810b422c5348c25e" // en produccion esto no deberia estar asi c:;
     var requestOptions = {
         method: "GET",
@@ -96,7 +96,7 @@ async function updateGMaps(lat, lon, query) {
         var query = lat + ',' + lon;
     }
     if (lat === undefined) {
-        await coordenadasDesdeGeocoding(query);
+        coordenadasDesdeGeocoding(query);
         console.log("YA HECHO GEOCODING: lat: " + lat + " lon: " + lon);
         }
     var url = urlTemplate.replace('QUERY', query);
@@ -115,7 +115,7 @@ function getLocForm() {
         console.log("UPDATE texto: " + texto);
         updateGMaps(undefined, undefined, texto);
         //Ahora obtenemos las coords desde 
-        await coordenadasDesdeGeocoding(texto)
+        coordenadasDesdeGeocoding(texto)
     }
 }
 
