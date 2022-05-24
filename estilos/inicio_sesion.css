@@ -118,3 +118,12 @@ body{
     font-weight:bold;
     color: #ffc107;
 }
+.l input{
+    background: none;
+    color: #ffc107;
+    border:none;
+    font-weight:bold;   
+}
+form p{
+       font-weight:bold;
+}
