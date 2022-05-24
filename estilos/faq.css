@@ -1,7 +1,16 @@
 .faq{
-    background: rgba(0, 0, 0,0.3);
+    background: rgba(0, 0, 0,0.5);
     color: white;
     text-align: center;  
+}
+.faq:hover{
+    animation:pulsate 1s ease-in-out; 
+}
+@keyframes pulsate{
+    0%{
+        box-shadow:
+            0 0 10px #ffc107;
+    }
 }
 .faq:focus{
     background: none;
@@ -16,6 +25,7 @@
     text-align: center;
     display: block;
 }
+
 .rev{
     color: #ffc107;
     font-size: bold;
