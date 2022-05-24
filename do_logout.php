@@ -18,10 +18,19 @@
          echo HIDE;
      }
     ?>
-    <div id="dologout_success">
+   
+    <div class="container-fluid lead texto" id="dologin_success">
+            <div class="row justify-content-center mt-4 mb-4">
+                 <div class="col-auto">
+                    <p class="text-white">'¡Hasta pronto <?php echo $datosUser['username']?>!</p>
+                    <p class="text-white">Has cerrado la sesión correctamente</p>
+                     <input type="button" class="binput2 mt-3" onclick="location.href='index.php'" value="Página principal">
+                     <input type="button" class="binput2 mt-3" onclick="location.href='inciosesion.php'" value="Iniciar">
+                </div>
+            </div>
+        </div>
         
         <h6>¡Hasta pronto <?php echo $datosUser['username'] ?>! Has cerrado sesión correctamente. <a href="index.php" class="volver"> Volver al inicio</a></h6>
-    </div>
     <?php
     # Si el usuario no ha introducido los datos correctos escondemos el div de success
     if ($type_user == 'invitado') {
