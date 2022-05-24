@@ -21,7 +21,7 @@
         <div class="col-md-6 col-sm-8 col-xl-6 col-lg-5 formulario">
             <form action="do_login.php" method="POST">
                 <div class="form-group text-center">
-                    <h4 class="text-white">Inicio de sesión</h4>
+                    <h4 class="text-white mb-3">Inicio de sesión</h4>
                 </div>
                 <div class="form-group mx-sm-4 pb-3">
                     <input name="login" type="text" class="form-control" placeholder="Usuario o email">

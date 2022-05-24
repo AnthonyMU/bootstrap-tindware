@@ -25,7 +25,7 @@
         <div class="col-md-6 col-sm-8 col-lg-6 col-lg-5 formulario">
             <form action="do_registro.php" method="POST">
                     <div class="form-group text-center">
-                        <h4>Registro de usuario</h4>
+                        <h4 class="mb-3">Registro de usuario</h4>
                     </div>
                     <div class="form-group mx-sm-4 pb-3">
                         <input name="username" type="text" class="form-control" placeholder="Nombre de usuario" required>
