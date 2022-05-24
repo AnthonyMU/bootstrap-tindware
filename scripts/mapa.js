@@ -80,7 +80,7 @@ function obtenerOfertasCercanas(lat, lon) {
                 var distanciaDosDec = ofertas[i]["distance"].toFixed(2);
                 console.log(distanciaDosDec);
                 var idOfertaHTML = "oferta" + i.toString();
-                $("#resultados").append($("<div>").attr("id", idOfertaHTML))
+                $("#resultados").append($("<div>").attr("id", idOfertaHTML)).attr("class", "oferta");
                 $("#" + idOfertaHTML).append($("<a>").attr("href", "viewOferta.php?id=" + ofertas[i]["id"]))
                 $("#" + idOfertaHTML).find('a').append($("<h3>").text(ofertas[i]["titulo"]));
                 $("#" + idOfertaHTML).append($("<p>").text(ofertas[i]["descripcion"]))
