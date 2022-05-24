@@ -22,8 +22,8 @@
     <div class="container-fluid lead texto" id="dologin_success">
             <div class="row justify-content-center mt-4 mb-4">
                  <div class="col-auto">
-                    <p class="text-white">¡Hasta pronto <?php echo $datosUser['username']?>!</p>
-                    <p class="text-white">Has cerrado la sesión correctamente</p>
+                    <p class="text-white text-center">¡Hasta pronto <?php echo $datosUser['username']?>!</p>
+                    <p class="text-white text-center">Has cerrado la sesión correctamente</p>
                      <input type="button" class="binput2 mt-3" onclick="location.href='index.php'" value="Inicio">
                      <input type="button" class="binput2 mt-3" onclick="location.href='iniciosesion.php'" value="Comenzar">
                 </div>
