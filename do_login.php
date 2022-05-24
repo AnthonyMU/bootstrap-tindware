@@ -57,9 +57,12 @@
         }
         ?>
         <div class="container-fluid lead texto" id="dologin_success">
-
-        <h6>Bienvenido de nuevo, <?php echo $username ?>. 
-        <a href="index.php" class="volver">Volver al inicio</a></h6>
+            <div class="row justify-content-center mt-4 mb-4">
+                 <div class="col-auto">
+                    <p>Bienvenido de nuevo, <?php echo $username?></p>
+                     <input type="button" class="binput2 mt-3" onclick="location.href='index.php'" value="Volver a Inicio">
+                </div>
+            </div>
         </div>
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success
