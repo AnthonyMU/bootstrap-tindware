@@ -185,7 +185,7 @@
                         Ander Herrero
                     </h3>
                     <p class="card-text">Atención al cliente</p>
-                    <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
+                    <a href="https://github.com/Doomzxz"><i class="bi bi-github text-white mx-1"></i></a> 
                     <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
                     </i></a>
@@ -201,7 +201,7 @@
                         José Luis Villalba
                     </h3>
                     <p class="card-text">Jefe de sistemas Linux</p>
-                    <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
+                    <a href="https://github.com/JRMask"><i class="bi bi-github text-white mx-1"></i></a> 
                     <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
                     </i></a>
@@ -217,7 +217,7 @@
                         Alex Crespo
                     </h3>
                     <p class="card-text">RRHH</p>
-                    <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
+                    <a href="#"><i class="bi bi-github text-white mx-1"></i></a> 
                     <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
                     </i></a>
@@ -233,7 +233,7 @@
                         Adrián Martinez
                     </h3>
                     <p class="card-text">Marketing y relaciones públicas</p>
-                    <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
+                    <a href="https://github.com/adrianmikeldi"><i class="bi bi-github text-white mx-1"></i></a> 
                     <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
                 </div>
@@ -248,9 +248,9 @@
                         Anthony Murriel
                     </h3>
                     <p class="card-text">CEO y Desarrollador Frontend</p>
-                    <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> 
-                    <a href="#"><i class="bi bi-instagram text-white mx-1"></i></a>
-                    <a href="#"><i class="bi bi-linkedin text-white mx-1"></i></a>
+                    <a href="https://www.instagram.com/anthonymurriell/"><i class="bi bi-github text-white mx-1"></i></a> 
+                    <a href="https://github.com/AnthonyMU"><i class="bi bi-instagram text-white mx-1"></i></a>
+                    <a href="https://www.linkedin.com/in/anthonyrodriguezmurriel"><i class="bi bi-linkedin text-white mx-1"></i></a>
                     </i></a>
                 </div>
             </div>
