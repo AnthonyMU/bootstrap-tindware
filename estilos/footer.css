@@ -38,7 +38,7 @@
 }
 
 #footer .footer-top .social-links a:hover {
-    background: brown;
+    color: #ffc107;
     color: #fff;
     text-decoration: none
 }
@@ -64,7 +64,7 @@
 
 #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #ec7f6d;
+    color: #ffc107;
     font-size: 18px;
     line-height: 1
 }
@@ -87,7 +87,8 @@
 }
 
 #footer .footer-top .footer-links ul a:hover {
-    color: #e96b56
+    color: #ffc107;
+    animation:pulsate 1s ease-in-out; 
 }
 
 #footer .footer-top .footer-contact {
