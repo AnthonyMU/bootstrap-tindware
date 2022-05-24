@@ -30,4 +30,6 @@
     color: #ffc107;
     font-size: bold;
 }
-
+.accordion-button:focus {
+    border: 1px solid #ffc107;
+}
